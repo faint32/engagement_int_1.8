@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/audio_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/info_margin_6dp"
+            android:background="@drawable/bg_mesg_purple" >
+            
+            <TextView
+		        android:id="@+id/item_view_info_audio_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentStart="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="@dimen/info_margin_8dp"
+		        android:layout_marginStart="@dimen/info_margin_8dp"
+		        android:textColor="@color/info_audio_txt_color"
+		        android:textSize="@dimen/info_level_txt_size" />
+
+            <TextView
+                android:id="@+id/item_view_info_audio_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/info_margin_4dp"
+                android:layout_marginEnd="@dimen/info_margin_4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_speaker_anim_chat_list" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/audio_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:indeterminateDrawable="@drawable/bg_chat_progressbar"
+            />
+
+        <ImageView
+            android:id="@+id/audio_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_mesg_fail_tip"
+            android:contentDescription="@string/pic"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

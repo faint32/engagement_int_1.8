@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/send_gift_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <TextView
+        android:id="@+id/send_gift_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_28dp"
+        android:layout_alignParentTop="true"
+        android:background="#66000000"
+        android:drawableLeft="@drawable/icon_love_white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/info_margin_12dp"
+        android:text="@string/send_gift_tip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/info_more_data_txt_size" />
+
+    <LinearLayout
+        android:id="@+id/margin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_gift_tip"
+        android:background="@color/info_send_gift_pager_back"
+        android:paddingBottom="@dimen/info_margin_8dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pggift_curtain" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/gift_pager"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_below="@+id/margin_layout"
+        android:background="@color/info_send_gift_pager_back" 
+        />
+
+    <LinearLayout
+        android:id="@+id/indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/gift_pager"
+        android:background="@color/info_send_gift_pager_back" 
+        android:paddingBottom="@dimen/info_margin_10dp"
+        >
+        <com.netease.engagement.view.PagerIndicator
+            android:id="@+id/gift_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" 
+            />
+        <com.netease.engagement.view.PagerIndicator
+            android:id="@+id/gift_indicator_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" 
+            />
+    </LinearLayout>
+
+     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:layout_below="@+id/indicator_layout"
+        android:background="@color/info_send_gift_pager_divider" />
+     
+    <RelativeLayout
+        android:id="@+id/send_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_48dp"
+        android:layout_below="@+id/divider"
+        android:background="@color/info_send_gift_pager_back" >
+
+        <TextView
+            android:id="@+id/txt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/info_margin_8dp"
+            android:background="@drawable/btn_send_gift_selector"
+            android:gravity="center"
+            android:text="@string/send_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/info_txt_size_17" />
+
+        <RadioGroup
+            android:id="@+id/gift_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/info_send_gift_pager_back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/info_margin_8dp"
+            android:layout_toLeftOf="@+id/txt_send"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" 
+            >
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

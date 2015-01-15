@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ******************************************
+     *                      listview 加载提示消息
+     -->
+    <color name="listview_loading_text_color">#5b6467</color>
+    <color name="listview_loading_text2_color">#1788bc</color>
+   
+</resources>

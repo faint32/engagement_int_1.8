@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mesg_purple"
+    android:paddingBottom="@dimen/info_margin_2dp"
+    android:paddingLeft="@dimen/info_margin_2dp"
+    android:paddingStart="@dimen/info_margin_2dp"
+    android:paddingRight="@dimen/info_margin_5dp"
+    android:paddingEnd="@dimen/info_margin_5dp"
+    android:paddingTop="@dimen/info_margin_2dp" >
+
+    <com.netease.engagement.widget.LoadingImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/info_margin_3dp"
+        android:layout_marginEnd="@dimen/info_margin_3dp"
+        android:maxHeight="@dimen/chat_list_image_max_height"
+        android:maxWidth="@dimen/chat_list_image_max_height"
+        android:minHeight="@dimen/info_margin_60dp"
+        android:minWidth="@dimen/info_margin_60dp"
+        android:scaleType="centerCrop" />
+    
+    <RelativeLayout
+        android:id="@+id/foreImageRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignStart="@id/image"
+        android:layout_alignRight="@id/image"
+        android:layout_alignEnd="@id/image"
+        android:background="#9a000000"
+        android:visibility="gone" >
+        
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/icon_photo_lock" 
+	        android:contentDescription="@string/pic"
+	        />
+        
+    </RelativeLayout>
+
+    <!--
+         <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/bg_chat_send_progressbar" 
+        android:visibility="gone"
+        />
+    -->
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

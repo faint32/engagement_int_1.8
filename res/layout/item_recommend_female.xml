@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+	<include layout="@layout/item_recommend_female_small"
+	    android:id="@+id/recommend_female_left"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    />
+	<include layout="@layout/item_recommend_female_small"
+	    android:id="@+id/recommend_female_right"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:layout_marginLeft="2px"
+    />
+</LinearLayout>

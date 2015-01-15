@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+     <!-- 加载、成功、失败的文案提示 -->
+    <string name="loading_default">努力加载中</string>
+    <string name="loading_more_default">正在加载更多…</string>
+    <string name="error_loading_default">加载失败</string>
+    <string name="success_no_content_default">无内容</string>
+    <string name="error_no_network">网络错误，请稍后再试</string>
+    <string name="error_retry">点这里再让我试试</string>
+
+</resources>

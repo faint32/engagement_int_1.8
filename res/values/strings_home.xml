@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页界面相关字符资源 -->
+<resources>
+    <!-- 导航栏Tab -->
+    <string name="view_home_tabbar_title_recommend">推荐</string>
+    <string name="view_home_tabbar_title_discover">排行</string>
+    <string name="view_home_tabbar_title_chat">聊天</string>
+    <string name="view_home_tabbar_title_myself">设定</string>
+    
+    <!-- 快捷工具 -->
+    <string name="pickup">搭讪神器</string>
+</resources>

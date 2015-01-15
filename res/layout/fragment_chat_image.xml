@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <RelativeLayout 
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    
+    <TextView
+        android:id="@+id/xian_pai_photo_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:layout_marginLeft="@dimen/info_margin_16dp"
+        android:background="@drawable/bg_pgchat_xianpaiphoto"
+        android:drawableLeft="@drawable/icon_tips_circle_black"
+        android:drawablePadding="@dimen/info_margin_4dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/info_margin_4dp"
+        android:text="@string/xian_pai_zhao_pian"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="invisible" />
+    
+    <LinearLayout 
+	    android:id="@+id/unlike_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:layout_marginRight="@dimen/info_margin_16dp"
+	    android:gravity="center"
+	    android:background="@drawable/bg_pgviewphoto_bottom_bar_praise"
+	    android:paddingRight="@dimen/info_margin_12dp"
+	    android:visibility="gone"
+	    >
+	    <TextView 
+	        android:id="@+id/unlike_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:background="@drawable/icon_unlike_selector"
+	        />
+	    <TextView 
+	        android:id="@+id/unlike_num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	    	android:textSize="@dimen/info_more_data_txt_size"
+	        />
+	</LinearLayout>
+    
+    
+    <LinearLayout 
+	    android:id="@+id/praise_layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toLeftOf="@id/unlike_layout"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:layout_marginRight="@dimen/info_margin_12dp"
+	    android:gravity="center"
+	    android:background="@drawable/bg_pgviewphoto_bottom_bar_praise"
+	    android:paddingRight="@dimen/info_margin_12dp"
+	    android:visibility="gone"
+	    >
+	    <TextView 
+	        android:id="@+id/praise_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:background="@drawable/icon_praise_selector"
+	        />
+	    <TextView 
+	        android:id="@+id/praise_num"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	    	android:textSize="@dimen/info_more_data_txt_size"
+	        />
+	</LinearLayout>
+    
+    <com.netease.engagement.widget.UnLockView 
+        android:id="@+id/unlock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    
+    <com.netease.engagement.widget.UnLockView
+        android:id="@+id/vip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    
+    <ProgressBar 
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    
+    <ImageView
+        android:id="@+id/praise_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_pgviewphoto_animation"
+        android:visibility="gone" />
+
+</RelativeLayout>

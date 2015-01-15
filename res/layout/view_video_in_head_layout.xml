@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/video_pub_root" >
+
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/black">
+        <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:layout_weight="1">
+	        
+	        <TextView android:id="@+id/video_wifi_toast" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/network_traffic_gprs_tips"
+	            android:textColor="#FFFFFF"
+	            android:paddingLeft="30dp"
+	            android:paddingRight="30dp"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:visibility="invisible"
+	            android:layout_centerInParent="true"/>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:id="@+id/video_container" 
+	        android:layout_width="match_parent"
+	        android:layout_height="300dp">
+	        
+	        <uk.co.senab.photoview.PhotoView 
+	            android:id="@+id/video_cover_img" 
+	            android:layout_width="match_parent"
+		        android:layout_height="match_parent"/>
+	        
+		    <VideoView android:id="@+id/video_view" 
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:visibility="invisible"/>
+		    
+	    </RelativeLayout>
+	
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="3">
+		    
+	        <com.netease.framework.widget.CircleProgressShaderView
+		        android:id="@+id/video_progress"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:layout_centerHorizontal="true"/>
+		    
+	    </RelativeLayout>
+    </LinearLayout>
+    
+    <ImageView android:id="@+id/video_cover_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_video_play_alpha50"/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="lofter_video_dialog" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/custom_dialogue_bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="lofter_custom_dialog" parent="@android:style/Theme.NoTitleBar">
+		<item name="android:windowBackground">@color/custom_dialogue_bg</item>  
+		<item name="android:windowIsTranslucent">true</item>  
+	</style>  
+	<style name="lofter_progress_dialog" parent="@android:style/Theme.NoTitleBar">  
+		<item name="android:windowBackground">@android:color/transparent</item>  
+		<item name="android:windowIsTranslucent">true</item>  
+	</style>  
+	<style name="lofter_progress_dialog_fullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">  
+		<item name="android:windowBackground">@android:color/transparent</item>  
+		<item name="android:windowIsTranslucent">true</item>  
+	</style>  
+    
+    <style name="custom_toast_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textColor">@color/white_opacity</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="custom_toast_layout_style">
+        <item name="android:background">@drawable/video_custom_toast_shape</item>
+        <item name="android:minHeight">100dip</item>
+        <item name="android:minWidth">100dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">25dip</item>
+    </style>
+
+    <style name="camcorder_popup_animation_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/video_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/video_popup_exit</item>
+    </style>
+    
+</resources>

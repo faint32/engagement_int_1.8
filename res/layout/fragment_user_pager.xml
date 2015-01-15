@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!-- 右边留言列表 -->
+	<RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+        
+	    <LinearLayout
+	        android:id="@+id/layout_right_inner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#ff0000"
+	        android:orientation="vertical">
+	    </LinearLayout>
+        
+	</RelativeLayout>
+
+    <!-- 左边功能列表 -->
+	<RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+	    <LinearLayout
+	        android:id="@+id/layout_left_inner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#0000ff"
+	        android:orientation="vertical">
+	    </LinearLayout>
+	    
+	</RelativeLayout>
+	
+	<!-- 中间内容 -->
+	<LinearLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="#F2F1E7"
+        android:visibility="visible" >
+	    <LinearLayout
+	        android:id="@+id/layout_middle_inner" 
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+	    </LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

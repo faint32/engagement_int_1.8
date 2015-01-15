@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:visibility="gone" 
+    >
+    <LinearLayout
+        android:id="@+id/left_margin"
+        android:layout_width="@dimen/chat_topic_view_margin"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#66000000"
+        android:orientation="vertical" 
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" 
+        >
+        <RadioGroup
+            android:id="@+id/topic_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/say_hello"
+                style="@style/radiobutton_view_topic_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />   
+
+            <RadioButton
+                android:id="@+id/youmo"
+                style="@style/radiobutton_view_topic_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/topic_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

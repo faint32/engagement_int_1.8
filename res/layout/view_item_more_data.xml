@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_enke_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#f8f8f8"
+       	/>
+    <TextView
+        android:id="@+id/more_enke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_see_more_selector"
+        android:gravity="center"
+        android:textColor="#bd9fdf"
+        android:textSize="14sp" 
+        />
+    
+</LinearLayout>

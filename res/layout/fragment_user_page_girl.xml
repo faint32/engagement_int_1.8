@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <include 
+    	android:id="@+id/empty_tip"
+    	layout="@layout/view_common_empty" 
+    	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:layout_centerInParent="true"
+    	android:visibility="gone" />
+
+    <com.netease.engagement.view.UserScrollView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <com.netease.engagement.view.ImageViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pgregister_head" />
+            
+            <RelativeLayout
+                android:id="@+id/top_layout_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="40dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/user_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20" />
+
+                    <!-- <TextView
+                        android:id="@+id/level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/info_margin_4dp"
+                        android:background="@drawable/bg_top_bar_lv"
+                        android:gravity="center"
+                        android:textColor="@color/info_level_txt_color"
+                        android:textSize="@dimen/info_level_txt_size"
+                        android:visibility="gone" /> -->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/next_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:background="@drawable/btn_pginfo_viewphoto_num"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/header_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_userpage_header" />
+
+                <include
+                    android:id="@+id/user_page_image_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_image_and_gift"
+                    android:background="@color/white" />
+
+                <include
+                    android:id="@+id/user_page_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_detail_data"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/info_margin_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/info_main_page_bottom_height"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.netease.engagement.view.UserScrollView>
+    
+    <com.netease.engagement.view.UserBottomLinearLayout
+        android:id="@+id/chat_layout_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_main_page_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/info_page_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/gift_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/gift_layout"
+                android:layout_width="@dimen/userpage_bottom_layout_button_width"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_send_gift_selector" />
+
+                <TextView
+                    android:id="@+id/gift_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/info_margin_4dp"
+                    android:text="@string/send_gift"
+                    android:textColor="@color/txt_color_chat_selector"
+                    android:textSize="@dimen/info_main_page_bottom_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+		
+        <LinearLayout 
+            android:layout_width="0.5dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/info_bottom_center_divider"/>
+        
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/chat_layout"
+                android:layout_width="@dimen/userpage_bottom_layout_button_width"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/chat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_chat_selector" />
+
+                <TextView
+                    android:id="@+id/chat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/info_margin_4dp"
+                    android:text="@string/chat"
+                    android:textColor="@color/txt_color_chat_selector"
+                    android:textSize="@dimen/info_main_page_bottom_txt_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.netease.engagement.view.UserBottomLinearLayout>
+    
+    <com.netease.engagement.view.SnowView
+	    android:id="@+id/snowView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@id/chat_layout_all" />
+    
+    <LinearLayout
+        android:id="@+id/gift_match_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9a000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gift_match_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/top_margin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.netease.engagement.widget.GiftKeyboardView
+            android:id="@+id/gift_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            
+        </com.netease.engagement.widget.GiftKeyboardView>
+        
+        <com.netease.engagement.widget.GiftExploreView
+            android:id="@+id/gift_explore_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            
+        </com.netease.engagement.widget.GiftExploreView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/info_margin_20dp"
+        android:background="@drawable/bg_pgviewphoto_bottom_bar_photonum"
+        android:gravity="center"
+        android:paddingLeft="@dimen/info_margin_4dp"
+        android:paddingRight="@dimen/info_margin_4dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/info_more_data_txt_size"
+        android:visibility="gone" />
+    
+    
+
+</RelativeLayout>

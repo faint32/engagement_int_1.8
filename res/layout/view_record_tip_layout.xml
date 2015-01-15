@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/chat_audio_record_tip_layout_height"
+    android:id="@+id/container"
+    android:gravity="center"
+    android:orientation="vertical" 
+    >
+    <LinearLayout 
+        android:id="@+id/top_layout"
+        android:layout_width="@dimen/info_margin_160dp"
+        android:layout_height="@dimen/info_margin_56dp"
+        android:background="@drawable/bg_pgchat_mesg_float_window_top"
+        android:layout_marginLeft="@dimen/info_margin_14dp"
+        android:layout_marginRight="@dimen/info_margin_14dp"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_mesg_float_window_voice_circle"
+        />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/chat_audio_record_tip_time_size"
+            />
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/gesture_tip"
+            android:layout_width="@dimen/info_margin_160dp"
+            android:layout_height="@dimen/info_margin_28dp"
+            android:background="@drawable/bg_pgchat_mesg_float_window_bottom_black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/chat_audio_record_tip_gesture_size"
+            />
+
+</LinearLayout>

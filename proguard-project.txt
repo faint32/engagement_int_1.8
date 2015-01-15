@@ -1,0 +1,73 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepclassmembers class **.R$* {
+  public static <fields>;
+}
+
+-keepattributes TargetApi
+
+#for weixin sdk
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+#for yixin sdk
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;} 
+
+-keep class com.netease.service.protocol.meta.** { *; }
+-keep class com.netease.service.protocol.EgmProtocolConstants$SendStatus{ *; }
+-keep class com.netease.service.transactions.PushMsgTransaction$ChatItemStringInfo{ *; }
+-keep class com.coremedia.**{ *; }
+-keep class com.googlecode.**{ *; }
+-keep class org.aspectj.**{ *; }
+-keep class org.jdesktop.**{ *; }
+-keep class com.mixin.helper.media.**{ *; }
+
+-ignorewarnings
+-libraryjars libs/gson-2.2.4.jar
+-libraryjars libs/locSDK_4.1.jar
+-libraryjars libs/weibosdkcore.jar
+-libraryjars libs/android_netease_analysis_sdk.2.4.0.jar
+-libraryjars libs/pushservice-androidclient-1.4.jar
+-libraryjars libs/isoviewer-1.0-RC-27.jar
+
+# Gson uses generic type information stored in a class file when working with fields. Proguard
+# removes such information by default, so configure it to keep all of it.
+-keepattributes Signature
+
+-keepattributes SourceFile,LineNumberTable
+
+# For using GSON @Expose annotation
+-keepattributes *Annotation*
+
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+#-keep class com.google.gson.stream.** { *; }
+
+-keep class org.json.** { *; }
+
+# Application classes that will be serialized/deserialized over Gson
+-keep class com.google.gson.examples.android.model.** { *; }
+
+-keep class com.netease.engagement.util.MyWebChromeClient { public <methods>; }
+
+##---------------End: proguard configuration for Gson  ----------

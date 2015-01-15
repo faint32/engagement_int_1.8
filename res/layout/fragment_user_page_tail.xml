@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/introduce_tag"
+        android:gravity="center_vertical"
+        android:text="@string/self_introduce"
+        android:textColor="#252525"
+        android:textSize="17sp" 
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/intr_hori"
+        android:background="#cccccc"/>
+    <TextView
+        android:id="@+id/introduce_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_16dp"
+        android:gravity="center_vertical"
+        android:textColor="#787878"
+        android:textSize="15sp" 
+        android:layout_marginBottom="@dimen/info_margin_16dp"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_16dp"
+        android:id="@+id/date_tag"
+        android:gravity="center_vertical"
+        android:text="@string/favor_date"
+        android:textColor="#252525"
+        android:textSize="17sp" 
+        />
+    <View android:layout_width="match_parent"
+        android:id="@+id/date_hori"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="#cccccc"
+        />
+    
+	<TextView
+	    android:id="@+id/favor_date_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_margin_16dp"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:textColor="#787878"
+        android:textSize="15sp" 
+	    />
+	
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_16dp"
+       	android:id="@+id/hobby_tag"
+        android:gravity="center_vertical"
+        android:text="@string/interest_hobby"
+        android:textColor="#252525"
+        android:textSize="17sp" 
+        />
+	<View android:layout_width="match_parent"
+        android:id="@+id/hobby_hori"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="#cccccc"
+        />
+	<TextView
+	    android:id="@+id/hobby_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_margin_16dp"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:textColor="#787878"
+	    android:textSize="15sp"
+	    />
+	
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_16dp"
+        android:id="@+id/tag_skill"
+        android:gravity="center_vertical"
+        android:text="@string/adept_skill"
+        android:textColor="#252525"
+        android:textSize="17sp" 
+        />
+	<View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/skill_hori"
+        android:background="#cccccc"
+        />
+	<TextView
+	    android:id="@+id/skill_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_margin_16dp"
+	    android:layout_marginBottom="@dimen/info_margin_16dp"
+	    android:textColor="#787878"
+	    android:textSize="15sp"
+	    />
+	
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/yixin_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/btn_window_close" />
+
+    <TextView
+        android:id="@+id/yixin_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17" />
+
+    <TextView
+        android:id="@+id/yixin_dialog_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:id="@+id/yixin_dialog_content_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/icon_yixin_big" />
+
+    <TextView
+        android:id="@+id/yixin_dialog_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17" />
+
+    <RelativeLayout
+        android:id="@+id/bind_mobile_layout"
+        style="@style/AccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:visibility="gone">
+
+        <!-- 验证按钮 -->
+
+        <com.netease.engagement.widget.ProgressTextBar
+            android:id="@+id/verify_btn"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="110dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:progressDrawable="@drawable/register_progress_bg" />
+        <!-- 输入手机号 -->
+
+        <EditText
+            android:id="@+id/input_phone_number"
+            style="@style/AccountInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/verify_btn"
+            android:layout_toLeftOf="@id/verify_btn"
+            android:hint="@string/reg_input_mobile"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <!-- 输入验证码 -->
+
+        <EditText
+            android:id="@+id/input_verify_number"
+            style="@style/AccountInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_btn"
+            android:layout_marginTop="20dip"
+            android:hint="@string/reg_input_verify_code"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/yixin_dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@drawable/bg_pglogin_window_input"
+        android:hint="@string/yixin_input_hint_password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/reg_tip_dialog_btn_text_color"
+        android:textSize="@dimen/text_size_20" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dip"
+        android:background="@color/dialog_button_divider" />
+
+    <TextView
+        android:id="@+id/yixin_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_common_bg_selector"
+        android:gravity="center"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:textColor="@color/purple_dark"
+        android:textSize="@dimen/text_size_20" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页界面相关字符资源 -->
+<resources>
+    
+    <string name="rec_msg_count">发来%1$d条消息</string>
+    <string name="rec_msg_multi">%1$d个联系人发来%2$d条消息</string>
+    
+    <string name="rec_msg_fire">发来一条阅后即焚消息</string>
+    <string name="rec_msg_type_text">发来一条留言</string>
+    <string name="rec_msg_type_audio">发来一段语音</string>
+    <string name="rec_msg_type_video">发来一段视频</string>
+    <string name="rec_msg_type_private_pic">发来一张私照</string>
+    <string name="rec_msg_type_local_pic">发来一张图片</string>
+    <string name="rec_msg_type__gift">送了你一份礼物</string>
+    <string name="rec_msg_type_face">发来一张贴图</string>
+    
+   
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dialog_item_height"
+    android:textColor="@color/purple_dark"
+    android:textSize="@dimen/text_size_20"
+    android:paddingLeft="@dimen/padding_30"
+    android:gravity="left|center_vertical"
+    android:background="@drawable/btn_common_bg_selector"
+/>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 微博绑定及分享相关字串 -->
+	
+	<string name="unbound_dlg_title_text">解除绑定</string>
+	<string name="unbound_dlg_message_text">是否解除分享帐号绑定，解绑后，您将无法分享到微博上。</string>
+	<string name="unbound_dlg_positive_btn_text">是，解除绑定</string>
+	<string name="unbound_success">成功退出</string>
+	<string name="share_to">分享到</string>
+    
+    <!-- 分享 -->
+    <string-array name="share_channel">
+        <item>新浪微博</item>
+        <item>网易微博</item>
+        <item>腾讯微博</item>
+        <item>QQ空间</item>
+        <item>人人网</item>
+        <item>豆瓣</item>
+        <item>开心网</item>
+        <item>搜狐网</item>
+    </string-array>
+    
+	
+	<!-- 微博绑定 -->
+	<!-- weibo types -->
+	<string name="weibo_type_netease_name_text">网易微博</string>
+	<string name="weibo_type_sina_name_text">新浪微博</string>
+	<string name="weibo_type_tencent_name_text">腾讯微博</string>
+	<string name="weibo_type_renren_name_text">人人网</string>
+	<string name="weibo_type_qzone_name_text">"QQ空间"</string>
+	<string name="weibo_type_qq_name_text">"QQ"</string>
+	<string name="weibo_type_douban_name_text">"豆瓣"</string>
+	<!-- weibo types -->
+	
+	<!-- unbound button text -->
+	<string name="weibo_bound_text">绑定</string>
+	<string name="weibo_unbound_text">已绑定</string>
+	<string name="weibo_un_setting_text">未设置</string>
+	<string name="user_setting_weibo_failture_text">设置失败</string>
+	<string name="please_select_one_weibo_account_first">请先选择一个您要登录的微博</string>
+	<string name="user_setting_weibo_successfully_text">设置成功</string>
+	<!-- unbound button text -->
+    <string name="weibo_login_error">微博登录失败</string>
+ 
+</resources>

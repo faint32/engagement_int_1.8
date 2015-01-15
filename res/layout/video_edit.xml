@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+    
+ 	<TextView
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/video_record_top_bar"
+        android:background="@color/black"
+        android:text="@string/video_edit" 
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:gravity="center">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar" >
+
+        <HorizontalScrollView
+            android:id="@+id/video_horizontalscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/video_play_h"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextureView
+                    android:id="@+id/video_preview_view_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/video_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/video_play_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextureView
+                    android:id="@+id/video_preview_view_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- 占位，滚动 -->
+
+                <View
+                    android:id="@+id/video_scrollview_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/video_scroll_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/video_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_video_play_alpha50" 
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/video_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:clickable="true"
+        android:orientation="vertical" >
+        <!-- seekbar -->
+
+        <include layout="@layout/video_edit_seekbar" />
+        <!-- seekbar -->
+        <!-- 时间轴 -->
+
+        <include layout="@layout/video_edit_horizontallistview" />
+        <!-- 时间轴 -->
+        <!-- 用上下两个view撑满剩余空间，达到占位目的，减少层级嵌套 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <include layout="@layout/video_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 碰缘分界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dip">
+
+    <RelativeLayout
+        android:id="@+id/yuanfen_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/yuanfen_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="@dimen/info_margin_8dp"
+            android:layout_weight="0"
+            android:background="@drawable/titlebar_a_selector"
+            android:gravity="center"
+            android:text="@string/more"
+            android:textColor="@color/purple_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yuanfen_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rec_yuanfen_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/yuanfen_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="@dimen/info_margin_8dp"
+            android:layout_weight="0"
+            android:background="@drawable/titlebar_a_selector"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/purple_dark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/yuanfen_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding" >
+
+        <com.netease.engagement.widget.SlideSwitchView
+            xmlns:slide_view="http://schemas.android.com/apk/res/com.netease.date"
+            android:id="@+id/slide_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            slide_view:left_text="@string/rec_yuanfen_tab_voice"
+            slide_view:right_text="@string/rec_yuanfen_tab_text"
+            slide_view:select_color="@color/white"
+            slide_view:unselect_color="@color/content_text" >
+        </com.netease.engagement.widget.SlideSwitchView>
+
+    </LinearLayout>
+
+ 
+    
+    <FrameLayout 
+        android:id="@+id/yuanfen_content"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:paddingLeft="@dimen/layout_padding"
+    	android:paddingRight="@dimen/layout_padding"
+    	android:visibility="invisible">
+        <!-- 语音部分 -->
+        <LinearLayout 
+            android:id="@+id/yuanfen_voice_part"
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="84dip"
+			android:gravity="center_horizontal">
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rec_yuanfen_gift_tips"
+                android:textColor="@color/content_text"
+                android:textSize="14sp" />
+            
+
+			<!-- 录音 -->
+
+			<com.netease.engagement.widget.RecordingView
+			    android:id="@+id/yuanfen_record"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginTop="20dip"
+			    android:background="@drawable/icon_pgrecommendlist_record" />
+
+			<TextView
+			    android:id="@+id/yuanfen_state_tip"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="12dp"
+			    android:gravity="center"
+			    android:textColor="@color/content_text"
+			    android:textSize="17sp"  />
+
+            <!-- 重录 -->
+		    <TextView 
+		        android:id="@+id/yuanfen_re_record"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_gravity="center_horizontal" 
+				android:layout_marginTop="15dip"
+				android:gravity="center"
+				android:text="@string/rec_yuanfen_re_record"
+				android:textSize="15sp"
+				android:background="@drawable/btn_re_record_bg_selector"
+				android:visibility="gone"
+		    />
+        </LinearLayout>
+        
+        <!-- 文字部分 -->
+        <RelativeLayout 
+            android:id="@+id/yuanfen_text_part"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="15dip"
+			android:visibility="gone">
+            <TextView 
+		        android:id="@+id/yuanfen_help_me"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_alignParentRight="true"
+				android:gravity="center"
+				android:text="@string/rec_yuanfen_help_me"
+				android:textSize="15sp"
+				android:textColor="@color/black"
+				android:background="@drawable/btn_gray_bg_selector"
+		    />
+            <TextView 
+		        android:id="@+id/yuanfen_text_count"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/yuanfen_help_me"
+				android:textSize="11sp"
+				android:layout_marginTop="4dp"
+				android:textColor="@color/content_text"
+		    />
+            <TextView 
+		        android:id="@+id/yuanfen_text_save"
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:layout_alignParentBottom="true"
+				android:layout_marginTop="20dip"
+				android:paddingLeft="40dip"
+	    		android:paddingRight="40dip"
+				android:gravity="center"
+				android:textSize="@dimen/text_size_17"
+				android:textColor="@color/white"
+				android:text="@string/rec_yuanfen_save"
+				android:background="@drawable/btn_register_bg_selector"
+				android:layout_marginBottom="40dip"
+		    />
+            <EditText 
+                android:id="@+id/yuanfen_text_edit"
+		        android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@id/yuanfen_text_count" 
+				android:layout_above="@id/yuanfen_text_save"
+				android:textSize="@dimen/text_size_17"
+				android:textColor="@color/black"
+				android:background="@drawable/bg_textarea"
+				android:padding="5dip"
+				android:gravity="left|top"
+				android:maxLength="400"
+				android:textColorHint="@color/content_text"
+				android:hint="@string/rec_yuanfen_gift_tips"
+				android:layout_marginTop="8dp"
+            />
+        </RelativeLayout>
+    </FrameLayout>
+    
+
+    
+    <LinearLayout
+        android:id="@+id/yuanfen_close_tip_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="gone">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_horizontal" 
+			android:text="@string/rec_yuanfen_switcher_tip"
+			android:textSize="@dimen/text_size_17"
+    		android:textColor="@color/black"
+    		android:layout_marginBottom="40dip"
+	    />
+    
+    	<TextView
+            android:id="@+id/yuanfen_open"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingLeft="20dip"
+			android:paddingRight="20dip"
+			android:layout_gravity="center_horizontal"
+            android:text="@string/rec_yuanfen_tip_open"
+            android:background="@drawable/btn_purple_text_selector"
+            android:textColor="@drawable/btn_purple_textcolor_selector"
+            android:textSize="16sp"
+            android:gravity="center" />
+    
+    </LinearLayout>
+
+</LinearLayout>

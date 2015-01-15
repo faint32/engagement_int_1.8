@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+    
+	<uk.co.senab.photoview.PhotoView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+	
+	<TextView
+        android:id="@+id/title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_8dp"
+        android:layout_marginStart="@dimen/info_margin_8dp"
+        android:layout_marginTop="@dimen/info_margin_8dp"
+        android:background="@drawable/titlebar_b_selector"
+        android:drawableLeft="@drawable/bar_btn_back_b"
+        android:drawableStart="@drawable/bar_btn_back_b"
+        android:drawablePadding="-2dip"
+        android:textSize="16sp"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:gravity="start|center_vertical"
+        android:layout_marginRight="@dimen/info_margin_5dp"
+        android:layout_marginEnd="@dimen/info_margin_5dp"
+    />
+	
+	<ProgressBar 
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+	
+	<TextView
+	    android:id="@+id/xianpaiTv"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/info_margin_60dp"
+        android:layout_marginLeft="@dimen/info_margin_16dp"
+        android:layout_marginStart="@dimen/info_margin_16dp"
+        android:paddingLeft="@dimen/info_margin_4dp"
+        android:paddingRight="@dimen/info_margin_4dp"
+        android:background="@drawable/bg_pgchat_xianpaiphoto"
+        android:drawableStart="@drawable/icon_tips_circle_black"
+        android:drawableLeft="@drawable/icon_tips_circle_black"
+        android:text="@string/xian_pai_zhao_pian"
+        android:textColor="@color/black"
+        android:gravity="center"
+		android:visibility="gone" />
+	
+	<ProgressBar android:id="@+id/fire_progressbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="3dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="@dimen/info_margin_20dp"
+	    android:layout_marginLeft="@dimen/info_margin_16dp"
+        android:layout_marginStart="@dimen/info_margin_16dp"
+        android:layout_marginRight="@dimen/info_margin_16dp"
+        android:layout_marginEnd="@dimen/info_margin_16dp"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:progressDrawable="@drawable/list_fire_progressbar" />
+    
+</RelativeLayout>

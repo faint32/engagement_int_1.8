@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/pri_page_back_color"
+    android:orientation="vertical" 
+    >
+    <RelativeLayout 
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_48dp"
+        >
+        <TextView 
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/info_margin_8dp"
+	        android:background="@drawable/titlebar_a_selector"
+	        android:textColor="@color/purple_dark"
+	        android:textSize="16sp"
+	        android:text="@string/done"
+	        android:layout_marginLeft="8dip"
+	        android:gravity="center" 
+            />
+
+    </RelativeLayout>
+    
+    <TextView 
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/record_sth"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/black"/>
+    
+    <TextView 
+	        android:id="@+id/record_state_tip"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/touch_to_record"
+	    	android:textSize="@dimen/text_size_15"
+	    	android:layout_marginTop="@dimen/info_margin_160dp"
+	    	android:gravity="center"
+	    	android:textColor="@color/info_audio_txt_color"
+	    	/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_margin_16dp">
+	    <com.netease.engagement.widget.RecordingView 
+	        android:id="@+id/audio_record_view"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true"
+	    	android:background="@drawable/icon_pgrecommendlist_record"/>
+    </RelativeLayout>
+    
+    <TextView 
+	        android:id="@+id/re_record"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:background="@drawable/btn_re_record_bg_selector"
+	    	android:text="@string/rec_yuanfen_re_record"
+	    	android:textSize="@dimen/text_size_15"
+	    	android:textColor="@color/text_dark_color"
+	    	android:visibility="invisible"
+	    	android:layout_marginTop="@dimen/info_margin_16dp"
+	    	/>
+</LinearLayout>

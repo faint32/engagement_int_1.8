@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册-补充相关信息界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView 
+        android:id="@+id/register_banner_iv"
+        android:layout_width="match_parent"
+    	android:layout_height="196dip"
+    	android:layout_alignParentTop="true"
+    	android:src="@drawable/bg_pgregister_head"
+    	android:scaleType="centerCrop"
+    />
+    
+    <!-- 标题栏 -->
+    <include layout="@layout/view_account_title_bar"
+        android:id="@+id/title_bar"
+        android:layout_alignParentTop="true"
+        style="@style/AccountTitleBar"
+    />
+    
+    <com.netease.engagement.view.ProfileView
+        android:id="@+id/register_avatar_iv"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignBottom="@id/register_banner_iv"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/icon_portrait_upload"
+    	android:layout_marginBottom="24dip"
+    />
+    
+    <EditText 
+        android:id="@+id/register_nikename"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/reg_input_nickname_hint"
+    	android:singleLine="true"
+	    android:imeOptions="actionDone"
+    	android:maxLength="12"
+    	android:layout_below="@id/register_avatar_iv"
+    	android:layout_marginTop="@dimen/reg_input_line_margin_top"
+        style="@style/AccountInputEdittext"
+        android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginRight="@dimen/layout_padding"
+    />
+    
+    <TextView 
+        android:id="@+id/register_birthday"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/reg_input_birthday_hint"
+    	android:layout_below="@id/register_nikename"
+    	android:layout_marginTop="@dimen/reg_input_line_margin_top"
+    	style="@style/AccountInputEdittext"
+    	android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginRight="@dimen/layout_padding"
+    />
+    <EditText 
+        android:id="@+id/register_invite"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/reg_input_invite_hint"
+    	android:singleLine="true"
+	    android:imeOptions="actionDone"
+    	android:layout_below="@id/register_birthday"
+    	android:layout_marginTop="@dimen/reg_input_line_margin_top"
+    	style="@style/AccountInputEdittext"
+    	android:layout_marginLeft="@dimen/layout_padding"
+        android:layout_marginRight="@dimen/layout_padding"
+    />
+</RelativeLayout>

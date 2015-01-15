@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 服务器返回错码定义 start -->
+    <string name="unkown_err">未知错误</string>
+    <string name="transaction_fail">操作失败</string>
+    <string name="network_error">网络错误</string>
+    <string name="sever_err">服务器端错误</string>
+    <string name="parse_err">未验证网络或服务器错误</string>
+    <string name="nikename_exist">昵称已存在</string>
+    <string name="file_create_error">文件读写失败，空间或权限不足</string>
+    
+    <string name="network_error_common">网络错误,请稍后再试</string>
+    <string name="content_notexist">访问内容不存在</string>
+    <string name="illegal_content">内容不够河蟹</string>
+    
+    
+    <string name="nick_null">昵称不能为空</string>
+</resources>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent" >
+    
+    <TextView 
+        android:id="@+id/closeTv"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+	    android:layout_marginTop="15dip"
+	    android:layout_marginRight="15dip"
+    	android:background="@drawable/icon_delete_circle_prs" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:background="@color/transparent" >
+        
+    <!-- 分享内容部分 -->
+    <RelativeLayout
+        android:id="@+id/shareContentRl"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/transparent" >
+    	
+        <!-- 收入分享 -->
+        <RelativeLayout
+            android:id="@+id/moneyRl"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:background="@color/transparent" >
+            
+            <ImageView
+                android:id="@+id/money1Iv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_centerHorizontal="true"
+	    		android:background="@drawable/layer_money_bg1"
+	    		android:contentDescription="@string/pic" />
+            
+            <TextView
+                android:id="@+id/money2Tv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_below="@id/money1Iv"
+	    		android:layout_centerHorizontal="true"
+	    		android:background="@drawable/layer_money_bg2"
+	    		android:textColor="@color/black" 
+    			android:textSize="15sp"
+    			android:gravity="center" /> 
+	    		
+            <TextView
+                android:id="@+id/money3Tv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_below="@id/money2Tv"
+	    		android:layout_centerHorizontal="true"
+	    		android:background="@drawable/layer_money_bg3"
+	    		android:textColor="@color/black" 
+    			android:textSize="35sp"
+    			android:gravity="center" /> 
+            
+        </RelativeLayout>
+        
+        
+        <!-- 礼物分享 -->
+        <RelativeLayout
+            android:id="@+id/giftRl"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/layer_gift" >
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_centerInParent="true" >
+                
+                <ImageView
+                    android:id="@+id/giftIconIv"
+                    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_marginTop="20dip"
+    				android:layout_marginLeft="-5dip"
+    				android:contentDescription="@string/pic" />
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_toRightOf="@id/giftIconIv"
+    				android:layout_alignTop="@id/giftIconIv"
+    				android:layout_alignBottom="@id/giftIconIv"
+    				android:layout_marginLeft="20dip"
+    				android:orientation="vertical" >
+    				
+                    <TextView
+	                    android:id="@+id/giftMsg1Iv"
+	                    android:layout_width="wrap_content"
+	    				android:layout_height="match_parent"
+	    				android:layout_weight="1"
+	    				android:layout_marginBottom="1dip"
+	    				android:textColor="@color/black" 
+		    			android:textSize="15sp"
+		    			android:gravity="bottom" />
+                    
+                    <TextView
+	                    android:id="@+id/giftMsg2Iv"
+	                    android:layout_width="wrap_content"
+	    				android:layout_height="match_parent"
+	    				android:layout_weight="1"
+	    				android:layout_marginTop="1dip"
+	    				android:textColor="@color/content_text" 
+		    			android:textSize="15sp"
+		    			android:gravity="top" />
+                    
+                </LinearLayout>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        
+        <!-- 升降级分享 -->
+        <RelativeLayout
+            android:id="@+id/levelRl"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:background="@color/transparent"
+    		android:layout_centerHorizontal="true" >
+            
+            <ImageView
+                android:id="@+id/levelTitleIv"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_centerHorizontal="true"
+    			android:layout_marginTop="75dip"
+    			android:background="@drawable/layer_upgrade_degrade_lv"
+    			android:contentDescription="@string/pic" />
+            
+            <ImageView
+                android:id="@+id/levelNumIv"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_centerHorizontal="true"
+    			android:layout_marginBottom="10dip"
+    			android:layout_marginRight="10dip"
+    			android:layout_alignBottom="@id/levelTitleIv"
+    			android:layout_alignRight="@id/levelTitleIv"
+    			android:contentDescription="@string/pic" />
+            
+            <ImageView
+                android:id="@+id/levelNameIv"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_centerHorizontal="true"
+    			android:layout_below="@id/levelTitleIv"
+    			android:contentDescription="@string/pic" />
+            
+            <TextView
+                android:id="@+id/levelMsg1Iv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_centerHorizontal="true"
+	    		android:layout_marginTop="10dip"
+	    		android:layout_marginLeft="50dip"
+	    		android:layout_marginRight="50dip"
+	    		android:layout_below="@id/levelNameIv"
+	    		android:textColor="@color/black" 
+		    	android:textSize="15sp"
+		    	android:gravity="center" />
+            
+            <TextView
+                android:id="@+id/levelMsg2Iv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_centerHorizontal="true"
+	    		android:layout_marginTop="5dip"
+	    		android:layout_marginLeft="50dip"
+	    		android:layout_marginRight="50dip"
+	    		android:layout_below="@id/levelMsg1Iv"
+	    		android:textColor="@color/black" 
+		    	android:textSize="15sp"
+		    	android:gravity="center" />
+            
+            <TextView
+                android:id="@+id/levelMsg3Iv"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_centerHorizontal="true"
+	    		android:layout_marginTop="5dip"
+	    		android:layout_marginLeft="50dip"
+	    		android:layout_marginRight="50dip"
+	    		android:layout_below="@id/levelMsg2Iv"
+	    		android:textColor="@color/black" 
+		    	android:textSize="15sp"
+		    	android:textStyle="bold"
+		    	android:gravity="center"
+		    	android:visibility="gone" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    
+    <!-- 分享标题部分 -->
+	<TextView
+	    android:id="@+id/titleTv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignTop="@id/shareContentRl"
+	    android:background="@drawable/layer_titlebg"
+	    android:textColor="@color/black" 
+	    android:textSize="18sp"
+	    android:gravity="center" />
+    
+    <!-- 分享按钮部分 -->
+    <RelativeLayout
+        android:id="@+id/shareBgRl"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_below="@id/shareContentRl"
+    	android:background="@drawable/layer_upgrade_degrade_whitebg" >
+        
+	    <LinearLayout
+		    android:id="@+id/shareRl"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true"
+	    	android:orientation="vertical"
+	    	 >
+	    
+		    <TextView
+		        android:id="@+id/shareViewTitleTv"
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="@color/black" 
+		    	android:textSize="15sp"
+		    	android:gravity="center" />
+	
+			<LinearLayout
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	android:baselineAligned="false"
+		    	android:layout_marginTop="20dip" >
+		        
+			        <TextView
+			            android:id="@+id/weixinTv"
+				        android:layout_width="match_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_marginLeft="15dip"
+				    	android:layout_marginRight="15dip"
+				    	android:layout_weight="1"
+				    	android:text="@string/invite_wechat"
+				    	android:textColor="@color/black" 
+				    	android:textSize="18sp"
+				    	android:gravity="center"
+				    	android:drawableBottom="@drawable/share_wechat_selector" />
+			        
+			        <TextView
+			            android:id="@+id/yixinTv"
+				        android:layout_width="match_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_marginLeft="15dip"
+				    	android:layout_marginRight="15dip"
+				    	android:layout_weight="1"
+				    	android:text="@string/invite_yixin"
+				    	android:textColor="@color/black" 
+				    	android:textSize="18sp"
+				    	android:gravity="center"
+				    	android:drawableBottom="@drawable/share_yixin_selector" />
+			        
+			        <TextView
+			            android:id="@+id/weiboTv"
+				        android:layout_width="match_parent"
+				    	android:layout_height="wrap_content"
+				    	android:layout_marginLeft="15dip"
+				    	android:layout_marginRight="15dip"
+				    	android:layout_weight="1"
+				    	android:text="@string/invite_weibo"
+				    	android:textColor="@color/black" 
+				    	android:textSize="18sp"	
+				    	android:gravity="center"
+				    	android:drawableBottom="@drawable/share_weibo_selector" />
+			        
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+		<Button
+		    android:id="@+id/noShareBtn"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerInParent="true"
+	    	android:textColor="@color/white" 
+	    	android:textSize="20sp"
+	    	android:gravity="center"
+	    	android:background="@drawable/share_button_selector"
+	   		android:visibility="gone" />
+	
+	</RelativeLayout>
+	
+    </RelativeLayout>
+
+</RelativeLayout>

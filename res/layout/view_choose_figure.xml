@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/info_margin_20dp"
+        android:textColor="@color/pri_header_back"
+        android:textSize="@dimen/text_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:background="@color/pri_header_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/info_margin_8dp"
+        android:paddingRight="@dimen/info_margin_8dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cup"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/cup_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_up" />
+
+            <net.simonvt.numberpicker.NumberPicker
+                android:id="@+id/picker_cup"
+                android:layout_width="@dimen/info_margin_64dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cup_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_12dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/breast"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/bust_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_up" />
+
+            <net.simonvt.numberpicker.NumberPicker
+                android:id="@+id/picker_breast"
+                android:layout_width="@dimen/info_margin_64dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bust_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_12dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/waist"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/waist_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_up" />
+
+            <net.simonvt.numberpicker.NumberPicker
+                android:id="@+id/picker_waist"
+                android:layout_width="@dimen/info_margin_64dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/waist_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_12dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hip"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/hip_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_up" />
+
+            <net.simonvt.numberpicker.NumberPicker
+                android:id="@+id/picker_hip"
+                android:layout_width="@dimen/info_margin_64dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/hip_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_pgregister_birthday_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:layout_marginTop="@dimen/info_margin_20dp"
+        android:background="@color/pri_header_back"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal" 
+        >
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/pri_header_back"
+            android:textSize="@dimen/text_size_20" />
+
+        <View
+            android:layout_width="@dimen/info_divider_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/pri_delete_dialog_divider_color" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/pri_header_back"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+</LinearLayout>

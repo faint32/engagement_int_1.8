@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册入口界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/title_bar"
+        style="@style/AccountTitleBar"
+        layout="@layout/view_account_title_bar" />
+
+    <LinearLayout
+        style="@style/AccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+             <!-- 输入手机号 -->
+
+            <EditText
+                android:id="@+id/input_phone_number"
+                style="@style/AccountInputEdittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/reg_input_mobile"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+            <!-- 验证按钮 -->
+
+            <com.netease.engagement.widget.ProgressTextBar
+                android:id="@+id/verify_btn"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="110dip"
+                android:layout_height="30dip"
+                android:progressDrawable="@drawable/register_progress_bg" />
+           
+        </LinearLayout>
+        <!-- 输入验证码 -->
+
+        <EditText
+            android:id="@+id/input_verify_number"
+            style="@style/AccountInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/reg_input_line_margin_top"
+            android:hint="@string/reg_input_verify_code"
+            android:imeOptions="actionNext"
+            android:singleLine="true" />
+
+        <!-- 输入密码 -->
+
+        <EditText
+            android:id="@+id/input_password"
+            style="@style/AccountInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/reg_input_line_margin_top"
+            android:hint="@string/reg_input_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_register_bg_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:text="@string/register_space"
+            android:textColor="@drawable/color_btn_text"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/external_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/info_margin_10dp"
+        android:layout_marginTop="@dimen/info_margin_10dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/reg_verify_bg_gray" />
+
+            <TextView
+                android:id="@+id/login_others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_others"
+                android:textColor="@color/content_text"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/reg_verify_bg_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="@dimen/info_margin_24dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+         
+                <LinearLayout
+                    android:id="@+id/lay_yixin"
+                    android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/icon_yixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/info_margin_8dp"
+                        android:background="@drawable/share_yixin_selector"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/text_yixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invite_yixin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/lay_yuehui"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" 
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/icon_yuehui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/info_margin_8dp"
+                    android:background="@drawable/icon_yuehui_selector"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+                <TextView
+                    android:id="@+id/text_yuehui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invite_yuehui"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay_wechat"
+                    android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_weight="1" 
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/icon_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/info_margin_8dp"
+                        android:background="@drawable/share_wechat_selector"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:id="@+id/text_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invite_wechat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reg_agree_items"
+        style="@style/AccountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/reg_agree_items_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:button="@drawable/icon_check_box_purple_bg_selector"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_agree_items"
+            android:textColor="@color/content_text"
+            android:textSize="@dimen/text_size_13" />
+        <!-- 查看条款 -->
+
+        <TextView
+            android:id="@+id/reg_agree_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding"
+            android:text="@string/account_money_check_license"
+            android:textColor="@color/pri_money_account_bg_color"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
+
+</LinearLayout>

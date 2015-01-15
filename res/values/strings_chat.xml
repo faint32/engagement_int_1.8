@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imagepreview_type_normal">原图</string>
+	<string name="imagepreview_type_amaro">青涩</string>
+	<string name="imagepreview_type_hudson">渗透</string>
+	<string name="imagepreview_type_rise">破晓</string>
+	<string name="imagepreview_type_inkwell">黑白</string>
+	<string name="imagepreview_type_earlybird">拿铁</string>
+	<string name="imagepreview_type_kelvin">姜黄</string>
+	<string name="imagepreview_type_nashille">琉璃</string>
+	<string name="imagepreview_type_walden">艾草</string>
+    <string name="imagepreview_type_lomo">沉降</string>
+    
+    <string name="str_chat">聊天</string>
+    <string name="only_new">只看新人</string>
+    <string name="order_time">时间</string>
+    <string name="order_rich">豪气值</string>
+    <string name="order_init">亲密度</string>
+    <string name="no_new_tip">很抱歉，暂时还没有新人的消息哦</string>
+    
+    <string name="no_msg_tip">还没收到消息</string>
+    <string name="go_to_chat">马上去搭讪</string>
+    <string name="man_tip">真男人就主动勾搭女神吧</string>
+    <string name="girl_tip">快去搭讪一下萌萌的土豪们吧</string>
+    <string name="girl_tip_no_msg_no_yuanfen">试试开启搭讪礼品【碰缘分】吧，\n 立即享受被土豪簇拥的满足</string>
+    <string name="chat_msg_tip">你有新的留言</string>
+    
+    <string name="delete_chat_item">删除该聊天</string>
+    <string name="delete_chat_item_success">删除成功</string>
+    <string name="inm_num">亲密度%s</string>
+    <string name="send_pic">发照片</string>
+    <string name="send_pub_pic">发公开照片</string>
+    <string name="send_pri_pic">发私密照片</string>
+    <string name="send_pic_too_small">发公图片太小</string>
+    <string name="send_one_pic_only">只能选择一张图片</string>
+    <string name="send_one_video_only">只能选择一段视频</string>
+    <string name="private_album">私密相册</string>
+    <string name="record_time">00:%s</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="slide_to_cancel">手指上滑，取消发送</string>
+    <string name="record_time_too_short">录音时间太短</string>
+    <string name="video_record_time_too_short">录制时间太短，请重新录制</string>
+    <string name="str_send">发送</string>
+    <string name="fresh_man">新人</string>
+    <string name="man_send_gift_show_up_tip">赠送礼物，可以增加她和你的亲密度哦！</string>
+    <string name="girl_use_record_show_up_tip">使用语音，可以收到更多礼物哦！</string>
+    <string name="girl_hunt_gift_show_up_tip">顶级女神们总结的经验 ——“开口就要礼物会让土豪很反感” ，你懂的</string>
+    <string name="girl_firt_gift_show_up_tip">第一份礼物哦，发段语音或视频给他吧，会有更多收获</string>
+    <string name="who_invite_me">谁邀请了我</string>
+    <string name="chat_feedback">建议反馈</string>
+    <string name="type_the_invite_code">输入邀请码</string>
+    <string name="who_invite_me_tip">输入她给你的邀请码就能找到她</string>
+    <string name="query">查询</string>
+    
+    <string name="str_find_topic">找话题</string>
+    <string name="say_hello">打招呼</string>
+    <string name="str_youmo">幽默</string>
+    <string name="ask_gift">撒娇</string>
+    <string name="str_gouda">勾搭</string>
+    <string name="str_tiaoxi">调戏</string>
+    
+    
+    <string name="str_video">视频</string>
+    <string name="send_video">发送视频</string>
+    <string name="send_video_size_limit">视频大小不能超过10M</string>
+    <string name="send_video_time_limit">视频长度不能超过1分钟</string>
+    <string name="send_video_size_tip">视频压缩后文件大小为%s\n确定要发送吗？</string>
+    <string name="video_can_not_play">当前视频不能播放</string>
+    
+    <string name="listview_pull_label">下拉加载历史消息</string>
+    <string name="listview_pull_label_for_end">上拉加载更多</string>
+    <string name="listview_refreshing_label">加载中</string>
+    <string name="listview_release_label">松开加载</string>
+    
+    <!--双击发送语音-->
+        <string name="dialog_guide_label">双击即可给对方发送语音</string>
+       <string name="dialog_record_duration">"00:00"</string>
+     <!-- 系统消息按钮 -->
+     <string name="sysmsg_type_cash_will_expire">去找男生要礼物</string>
+     <string name="sysmsg_type_fate">修改碰缘分内容</string>
+     <string name="sysmsg_type_gold_will_expire">去充值</string>
+     <string name="sysmsg_type_introduce">编写自我介绍</string>
+     <string name="sysmsg_type_introduce_audio">重新上传</string>
+     <string name="sysmsg_type_introduce_video">重新上传</string>
+     <string name="sysmsg_type_photo_not_pass">上传照片</string>
+     <string name="sysmsg_type_withdraw_success">去看看</string>
+     <string name="sysmsg_type_withdraw_failed">重新申请</string>
+     <string name="sysmsg_type_add_yixin">快去看看吧</string>
+     <string name="sysmsg_type_invite_friends">马上邀请</string>
+     
+     <!-- 系统消息按钮 -->
+     
+     <string name="keywords_match_add_friends">[&#160;加易信好友&#160;]</string>
+     <string name="keywords_match_use_yixin">[&#160;使用易信&#160;]</string>
+     <string name="yixin_friends_tip">你们已是易信好友，可以使用易信聊天</string>
+     <string name="play_audio_receiver_mode">正使用听筒模式播放语音</string>
+     <string name="changed_to_receiver_mode">已切换为听筒模式</string>
+     <string name="changed_to_speaker_mode">已切换为扬声器模式</string>
+     <string name="chat_msg_rensend">重发</string>
+     <string name="chat_upload_pic_menu">立刻上传</string>
+     <string name="chat_upload_avatar_sucess">等头像审核通过后再与他聊天吧</string>
+    
+    <string-array name="send_pic_array">
+        <item>发私密照片</item>
+        <item>发公开照片</item>
+    </string-array>
+    
+    <string-array name="send_pub_pic_array">
+        <item>拍摄</item>
+        <item>从相册选择</item>
+    </string-array>
+    
+    <string-array name="send_pub_pic_male_array">
+        <item>拍摄</item>
+        <item>从相册选择</item>
+        <item>选用系统头像</item>
+    </string-array>
+    
+    <string-array name="chat_list_item_operation">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="chat_list_item_operation_more">
+        <item>重发</item>
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="chat_list_item_operation_resend_del">
+        <item>重发</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="chat_list_item_operation_del">
+        <item>删除</item>
+    </string-array>
+    
+</resources>

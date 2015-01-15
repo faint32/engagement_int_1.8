@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_time"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/order_time" />
+
+        <RadioButton
+            android:id="@+id/radio_rich"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/order_rich" />
+
+        <RadioButton
+            android:id="@+id/radio_init"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/order_init" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radio_group" />
+
+    <LinearLayout
+        android:id="@+id/msg_tip_layout"
+        android:layout_width="328dp"
+        android:layout_height="@dimen/info_margin_28dp"
+        android:layout_below="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/info_margin_8dp"
+        android:background="@drawable/bg_pgcenter_purple_tip_bar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/chat_msg_tip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_4dp"
+            android:background="@drawable/icon_black_arrow_go" />
+    </LinearLayout>
+
+</RelativeLayout>

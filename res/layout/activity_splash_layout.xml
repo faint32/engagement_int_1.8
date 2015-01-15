@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/start_pic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:gravity="bottom"
+        android:layout_marginBottom="32dp">
+    
+    <!-- 首发包标志 -->
+    <ImageView 
+        android:id="@+id/splash_channel_icon"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="@dimen/splash_margin_top1"
+    	android:visibility="gone"/>
+    <TextView 
+        android:id="@+id/splash_channel_text"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="@dimen/splash_margin_top2"
+    	android:textColor="@color/white"
+    	android:textSize="17sp"
+		android:visibility="gone"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="bottom|center_horizontal"
+    	android:text="@string/app_copyright_netease"
+    	android:textColor="@color/white"
+    	android:textSize="9sp"
+    	android:layout_marginBottom="16dp"
+    />
+    
+</LinearLayout>

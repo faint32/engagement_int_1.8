@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_set_mesg_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recording_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:text="@string/dialog_record_duration"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/record_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_cancle_voice_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/white" 
+        android:textSize="15sp" />
+
+    <com.netease.engagement.widget.RecordingViewDoubleClick
+        android:id="@+id/record_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/record_cancle"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp" >
+    </com.netease.engagement.widget.RecordingViewDoubleClick>
+
+</RelativeLayout>

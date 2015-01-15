@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页Activity界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/search_bg"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="-100dip"
+    	android:paddingTop="100dip"
+    	android:orientation="vertical"
+    	android:background="@color/white">
+    
+    
+    <!-- 年龄 -->
+    <RelativeLayout
+        android:id="@+id/search_item_age"  
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_item_heigh"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/layout_padding"
+	    android:paddingRight="@dimen/layout_padding"
+	    android:background="@drawable/list_item_bg_selector">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/black"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_item_age"
+	    />
+	    <TextView 
+	    	android:id="@+id/search_item_input_age"    
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/content_text"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_age_default"
+	    />
+	</RelativeLayout>
+	
+    <!-- 分隔线 -->
+	<ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/list_divider_line_color"    
+	/>
+	
+	<!-- 星座 -->
+    <RelativeLayout
+        android:id="@+id/search_item_astro"  
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_item_heigh"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/layout_padding"
+	    android:paddingRight="@dimen/layout_padding"
+	    android:background="@drawable/list_item_bg_selector">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/black"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_item_astro"
+	    />
+	    <TextView 
+	    	android:id="@+id/search_item_input_astro"    
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/content_text"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_no_limit"
+	    />
+	</RelativeLayout>
+	
+    <!-- 分隔线 -->
+	<ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/list_divider_line_color"    
+	/>
+	
+    <!-- 地区 -->
+    <RelativeLayout
+        android:id="@+id/search_item_area"  
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_item_heigh"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/layout_padding"
+	    android:paddingRight="@dimen/layout_padding"
+	    android:background="@drawable/list_item_bg_selector">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/black"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_item_area"
+	    />
+	    <TextView 
+	    	android:id="@+id/search_item_input_area"    
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/content_text"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_no_limit"
+	    />
+	</RelativeLayout>
+	
+    <!-- 分隔线 -->
+	<ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/list_divider_line_color"    
+	/>
+	
+    <!-- 私照 -->
+    <RelativeLayout
+        android:id="@+id/search_item_private_pic"   
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_item_heigh"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/layout_padding"
+	    android:paddingRight="@dimen/layout_padding"
+	    android:background="@color/transparent">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/black"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_item_private_pic"
+	    />
+	    <CheckBox 
+	    	android:id="@+id/search_item_input_private_pic"    
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true"
+	    	android:gravity="center_vertical|right"
+	    	android:button="@drawable/check_box_selector_info_choice"
+	    />
+	</RelativeLayout>
+	
+    <!-- 收入 -->
+    <RelativeLayout
+        android:id="@+id/search_item_income"   
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/list_item_heigh"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="@dimen/layout_padding"
+	    android:paddingRight="@dimen/layout_padding"
+	    android:background="@drawable/list_item_bg_selector">
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/black"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_item_income"
+	    />
+	    <TextView 
+	    	android:id="@+id/search_item_input_income"    
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="true"
+	    	android:textColor="@color/content_text"
+	    	android:textSize="@dimen/text_size_17"
+	    	android:text="@string/rec_search_no_limit"
+	    />
+	</RelativeLayout>
+	
+    <!-- 分隔线 -->
+	<ImageView 
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/list_divider_line_color"    
+	/>
+	
+    <TextView 
+    	android:id="@+id/search_search_btn"    
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/layout_padding"
+    	android:layout_marginRight="@dimen/layout_padding"
+    	android:layout_marginTop="28dip"
+    	android:layout_marginBottom="28dip"
+    	android:paddingLeft="40dip"
+	    android:paddingRight="40dip"
+    	android:gravity="center"
+    	android:text="@string/search"
+    	android:textSize="@dimen/text_size_17"
+		android:textColor="@color/white"
+		android:background="@drawable/btn_register_bg_selector"
+    />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/search_footer_ll"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" />
+    
+</LinearLayout>

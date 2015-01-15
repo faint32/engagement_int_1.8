@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rank_title">排行</string>
+    <string name="rank_update_vip">升级VIP会员</string>
+    <string name="rank_vip_only_tip">仅向VIP会员开放</string>
+    
+    <string name="rank_name_new_female">NEW新秀榜</string>
+    <string name="rank_name_hot">HOT魅力榜</string>
+    <string name="rank_name_star">STAR红人榜</string>
+    <string name="rank_name_top_female">TOP女神榜</string>
+    <string name="rank_name_new_male">NEW新贵榜</string>
+    <string name="rank_name_top_male">TOP富豪榜</string>
+    <string name="rank_name_strength_male">HOT实力榜</string>
+	<string name="rank_name_private_pic_female">LIVE私照榜</string>    
+	    
+    <string name="rank_age_height">%1$d岁&#160;&#160;%2$dcm</string>
+    <string name="rank_charm_value">魅力值：%1$d</string>
+    <string name="rank_visit_value">人气值：%1$d</string>
+    <string name="rank_private_pic_chamming">私照人气：%1$d</string>
+    <string name="rank_private_pic_count">%1$d</string>
+    <string name="rank_private_pic_chamming_count">&#160;&#160;私照&#160;&#160;%1$d&#160;&#160;</string>
+    <string name="rank_new_member">新人</string>
+    <string name="rank_age">%1$d岁</string>
+    
+    <string name="rank_day">日榜</string>
+    <string name="rank_month">月榜</string>
+    
+</resources>

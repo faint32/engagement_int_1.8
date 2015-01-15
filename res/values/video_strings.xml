@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+	<string name="video_button_enter">确定</string>
+	<string name="video_button_cancel">取消</string>
+  	
+  	<!-- 缓存删除 -->
+  	<string name="video_txt_cache_deleting">正在删除缓存</string>
+  	
+  	<!-- 自定义相机拍照 -->
+  	<string name="video_no_storage">使用相机前请插入SD卡。</string>
+    <string name="video_not_enough_space">您的SD卡内存已满。</string>
+    <string name="video_preparing_sd">准备中…</string>
+    <string name="video_access_sd_fail">无法读取SD卡。</string>
+    <string name="video_dialog_ok">确认</string>
+    <string name="video_camera_error_title">初始化照相头失败</string>
+    <string name="video_cannot_connect_camera">无法连接相机。</string>
+    <string name="video_pref_camera_focusmode_default">continuous-picture</string>  	
+    <string name="video_pref_camera_scenemode_default">auto</string>
+    <string name="video_pref_camera_flash_mode_off">off</string>
+    <string name="video_pref_camera_flash_mode_on">on</string>
+    <string name="video_pref_camera_flash_mode_auto">auto</string>
+    <string name="video_pref_camera_flash_mode_torch">torch</string>
+    <string name="video_pref_camera_whitebalance_default">auto</string>
+    
+    <string name="video_tap_record_tips">按住拍摄</string>
+    <string name="video_minimum_tips">视频太短</string>
+    <string name="video_maximum_tips">已拍满10秒</string>
+    
+    <string name="video_play_error">加载视频出错</string>
+    <string name="video_cover_tips">滑动选择封面</string>
+    <string name="video_edit_start_tips">滑动设定起点</string>
+    <string name="video_edit_end_tips">滑动设定终点</string>
+    <string name="video_edit_min_tips">最小时长3秒</string>
+    
+    <string name="video_camcorder_delete">删 除</string>
+    <string name="video_re_recoder">重拍</string>
+    <string name="video_use">使用视频</string>
+    <string name="video_abandon">确定放弃这段视频？</string>
+    <string name="video_edit">截取视频</string>
+    <string name="video_cover">设置视频封面</string>
+    <string name="video_size_max">视频大小不能超过100M</string>
+    <string name="video_size_min">请选择清晰度更高的视频</string>
+    <string name="video_time_max">视频时间不得大于5分钟</string>
+    <string name="video_time_min">视频时间不得小于3秒噢</string>
+   
+</resources>

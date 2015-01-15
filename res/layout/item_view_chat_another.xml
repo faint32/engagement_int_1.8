@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <!-- 聊天对象部分 -->
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        android:paddingTop="@dimen/info_margin_10dp"
+        android:paddingBottom="@dimen/info_margin_10dp"
+        >
+
+        <TextView
+            android:id="@+id/user_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_clock_gray"
+            android:drawableStart="@drawable/icon_clock_gray"
+            android:drawablePadding="@dimen/info_margin_4dp"
+            android:textColor="@color/info_audio_txt_color"
+            android:textSize="@dimen/info_level_txt_size" 
+            android:paddingTop="@dimen/info_margin_4dp"
+        	android:paddingBottom="@dimen/info_margin_4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_16dp"
+            android:layout_marginRight="@dimen/info_margin_16dp"
+            android:layout_marginTop="@dimen/info_margin_20dp"
+            android:orientation="horizontal" 
+            android:gravity="top"
+            >
+
+            <com.netease.engagement.view.HeadView
+                android:id="@+id/user_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                
+	            <RelativeLayout
+	                android:id="@+id/user_container_layout"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/info_margin_6dp"
+	                android:layout_marginStart="@dimen/info_margin_6dp"
+	                android:layout_marginRight="@dimen/info_margin_32dp"
+	                android:layout_marginEnd="@dimen/info_margin_32dp"
+	                android:layout_marginTop="@dimen/info_margin_6dp" />
+	            
+	            <ProgressBar android:id="@+id/fire_progressbar"
+	                android:layout_width="wrap_content"
+	                android:layout_height="3dp"
+	                android:layout_marginTop="4dp"
+	                android:layout_marginLeft="6dp"
+	                android:layout_below="@id/user_container_layout"
+	                android:layout_alignLeft="@id/user_container_layout"
+	                android:layout_alignRight="@id/user_container_layout"
+	                style="?android:attr/progressBarStyleHorizontal"
+	                android:progressDrawable="@drawable/list_fire_progressbar"
+	                android:visibility="gone"/>
+	            
+	            <ImageView
+                    android:id="@+id/fire_icon"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="-28dp"
+	                android:layout_marginStart="-28dp"
+	               	android:layout_toRightOf="@id/user_container_layout"
+	               	android:layout_toEndOf="@id/user_container_layout"
+	               	android:layout_alignBottom="@id/user_container_layout"
+	                android:background="@drawable/icon_pgchat_fire_s_gray"
+	                android:contentDescription="@string/pic"
+	                android:visibility="gone" />
+            
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/keywords_match_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/info_margin_20dp"
+            android:layout_marginRight="@dimen/info_margin_16dp"
+            android:layout_marginLeft="@dimen/info_margin_16dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/keywords_match_text"
+                android:background="@drawable/bg_pgchat_tipsmesg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/info_margin_8dp" 
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:lineSpacingExtra="@dimen/info_margin_4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

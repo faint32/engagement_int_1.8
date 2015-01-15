@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑定手机号界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 标题栏 -->
+    <include layout="@layout/view_account_title_bar"
+        android:id="@+id/title_bar"
+        style="@style/AccountTitleBar"
+    />
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/title_bar"
+	    style="@style/AccountLayout">
+	    <!-- 验证按钮 -->
+        <com.netease.engagement.widget.ProgressTextBar 
+            android:id="@+id/verify_btn"
+	        android:layout_width="110dip"
+	        android:layout_height="30dip"
+	        android:layout_alignParentRight="true"
+	        android:progressDrawable="@drawable/register_progress_bg"
+	        style="?android:attr/progressBarStyleHorizontal" 
+        />
+	    <!-- 输入手机号 -->
+	    <EditText
+	        android:id="@+id/input_phone_number"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/verify_btn"
+	        android:layout_alignBottom="@id/verify_btn"
+	        android:hint="@string/reg_input_mobile"
+	        android:singleLine="true"
+	        android:imeOptions="actionNext"
+	        android:inputType="phone"
+	        android:maxLength="11"
+	        style="@style/AccountInputEdittext"
+	    />
+	    
+	    <!-- 输入验证码 -->
+		<EditText 
+		    android:id="@+id/input_verify_number"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/verify_btn"
+	        android:layout_marginTop="@dimen/reg_input_line_margin_top"
+	        android:hint="@string/reg_input_verify_code"
+	        android:singleLine="true"
+	        android:imeOptions="actionNext"
+	        style="@style/AccountInputEdittext"
+		/>
+		
+		<!-- 邀请码 -->
+		<EditText 
+	        android:id="@+id/bind_invite"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:hint="@string/reg_input_invite_hint"
+	    	android:singleLine="true"
+	        android:imeOptions="actionDone"
+	    	android:layout_below="@id/input_verify_number"
+	    	android:layout_marginTop="@dimen/reg_input_line_margin_top"
+	    	style="@style/AccountInputEdittext"
+	    />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_pager_header_male" />
+
+    <LinearLayout
+        android:id="@+id/man_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        android:background="@drawable/bg_pgcenter_male_tab"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/vip_layout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/info_margin_16dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_10dp"
+                android:text="@string/vip_service"
+                android:textColor="@color/content_text"
+                android:textSize="@dimen/info_txt_size_17" />
+
+            <TextView
+                android:id="@+id/vip_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vip_service_unused"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/info_divider_line_height"
+            android:layout_height="@dimen/info_margin_28dp"
+            android:layout_marginTop="@dimen/info_margin_16dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/account_layout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/info_margin_36dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_10dp"
+                android:text="@string/account"
+                android:textColor="@color/content_text"
+                android:textSize="@dimen/info_txt_size_17" />
+
+            <TextView
+                android:id="@+id/charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hori_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/info_margin_14dp"
+        android:paddingBottom="@dimen/info_margin_16dp"
+        android:paddingTop="@dimen/info_margin_16dp" >
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:layout_marginLeft="@dimen/info_margin_16dp"
+        android:layout_marginRight="@dimen/info_margin_16dp"
+        android:background="@color/info_divider_line_color" />
+
+</LinearLayout>

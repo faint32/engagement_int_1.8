@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tag_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_24dp"
+        style="@style/user_page_tag_txt_style"
+        android:drawableLeft="@drawable/icon_photo"
+        android:drawableStart="@drawable/icon_photo"
+        android:drawableRight="@drawable/icon_pginfo_arrow_view_photo"
+        android:drawableEnd="@drawable/icon_pginfo_arrow_view_photo"
+        android:gravity="center_vertical"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/hori_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_12dp" >
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/info_margin_16dp"
+            android:paddingStart="@dimen/info_margin_16dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <TextView
+        android:id="@+id/tag_talkskill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_24dp"
+        style="@style/user_page_tag_txt_style"
+        android:drawableLeft="@drawable/icon_liaotianji"
+        android:drawableStart="@drawable/icon_liaotianji"
+        android:gravity="center_vertical"
+        />
+    
+    <LinearLayout
+        android:id="@+id/talkskill_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_margin_4dp"
+	    android:layout_marginBottom="-8dp"
+	    android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/tag_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_24dp"
+        style="@style/user_page_tag_txt_style"
+        android:drawableLeft="@drawable/icon_gift"
+        android:drawableStart="@drawable/icon_gift"
+        android:gravity="center_vertical"
+        />
+    <com.netease.engagement.view.ImageFillLayout 
+        android:id="@+id/auto_fill_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </com.netease.engagement.view.ImageFillLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/gift_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_12dp"
+        android:visibility="gone"/>
+    
+    <TextView android:id="@+id/gift_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_gift_tip_height"
+        android:paddingLeft="@dimen/info_margin_14dp"
+        android:paddingStart="@dimen/info_margin_14dp"
+        android:paddingRight="@dimen/info_margin_12dp"
+        android:paddingEnd="@dimen/info_margin_12dp"
+        android:gravity="center|start"
+        android:textColor="@color/content_text"
+        android:textSize="@dimen/info_txt_size_17"
+        android:text="@string/no_gift_tip"
+        android:visibility="gone"
+        />
+    
+    <TextView
+        android:id="@+id/tag_enke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/info_margin_24dp"
+        style="@style/user_page_tag_txt_style"
+        android:drawableLeft="@drawable/icon_love"
+        android:drawableStart="@drawable/icon_love"
+        android:gravity="center_vertical"
+        />
+    <LinearLayout 
+        android:id="@+id/enke_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+    </LinearLayout>
+</LinearLayout>

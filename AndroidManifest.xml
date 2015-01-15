@@ -1,0 +1,392 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.netease.date"
+    android:versionCode="13"
+    android:versionName="1.7.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.netease.date.PERMISSION_WITH_SIGNATURE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    
+    <!-- 监听短信验证码 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 设置听筒模式 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    
+    <!-- 推送平台要求的特殊权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+    <!-- 推送平台要求的特殊权限 -->
+    
+    <permission
+        android:name="com.netease.date.PERMISSION_WITH_SIGNATURE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.netease.engagement.app.EngagementApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/ActionBarTheme"
+        android:largeHeap="true"
+        android:icon="@drawable/icon_app" >
+        
+        <!-- 统计sdk配置数据 -->
+        <meta-data  android:name="APPKEY" android:value="873aIH" />
+        <meta-data android:name="VERSION" android:value="v1.7.0" />
+        <meta-data android:name="Channel" android:value="date"/>
+        <meta-data android:name="isShouFa" android:value="n"/>  <!--  y:是首发   n:不是首发  -->
+        
+        <!-- 消息推送平台配置数据 -->
+        <meta-data android:name="NETEASE_DOMAIN" android:value="y.163.com" />
+        <meta-data android:name="NETEASE_PRODUCT_VERSION" android:value="v1.7.0" />
+        <!-- test 
+        <meta-data android:name="NETEASE_PRODUCT_KEY" android:value="a40153e44d864ae8938799d7653733bb" />
+        -->
+       
+        <!-- online -->
+        <meta-data android:name="NETEASE_PRODUCT_KEY" android:value="d4272b14f760492bac399ef54f3cea81" />
+        
+        
+        <!-- 百度地图定位 start -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="SHLGoku9PhCQ0AFHVK9RCc00" />
+         <!-- crashlyticst -->
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="932533618108ed345fba70e0537836db0000be01"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 百度地图定位 end -->
+        
+        <activity
+            android:name="com.netease.engagement.activity.ActivitySplash"
+            android:configChanges="orientation|keyboardHidden" 
+            android:windowSoftInputMode = "adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="com.netease.engagement.activity.ImageCropActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityHome" 
+                  android:windowSoftInputMode = "adjustNothing"
+                  android:launchMode="singleTask"
+                  android:exported="true"
+                  android:theme="@style/NimberPickerTheme" />
+        
+        <activity android:name="com.netease.engagement.image.explorer.FileExplorerActivity" />
+        <activity android:name="com.netease.engagement.image.explorer.PhotoUploadActivity" />
+        
+        <activity android:name="com.netease.engagement.activity.ActivitySelectPosition" />
+        
+        <activity android:name="com.netease.engagement.activity.ActivityWelcome"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityGuide"/>
+        
+        <activity 
+            android:name="com.netease.engagement.activity.ActivityAccountEntrance" 
+            android:theme="@style/NimberPickerTheme"
+            android:launchMode="singleTask"/>
+        <activity 
+            android:name="com.netease.engagement.activity.ActivityRegisterEntrance"/>
+        <activity 
+            android:name="com.netease.engagement.activity.ActivityRegisterDetail"
+            android:theme="@style/NimberPickerTheme"/>
+        <activity
+            android:name="com.netease.engagement.activity.ActivityLogin"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityBindMobile"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityYuanfen"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityChatSkill"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivitySearchList"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityWeb"/>
+         
+        <activity android:name="com.netease.engagement.activity.ActivityImageBrowser"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityPageInfo"
+            android:theme="@style/NimberPickerTheme"
+            />
+        <activity android:name="com.netease.engagement.activity.ActivitySingleRankList"/>
+        <activity android:name="com.netease.engagement.activity.ActivityMultiRankList"/>
+        <activity android:name="com.netease.engagement.activity.ActivityMoneyAccount"/>
+        
+        
+        <activity android:name="com.netease.engagement.activity.ActivityAudioRecorder"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityImageProcess"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        
+         <activity android:name="com.netease.engagement.activity.ActivityLevelTable"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+         
+         <activity android:name="com.netease.engagement.activity.ActivityChoiceList"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityPrivateSession" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+        
+         <activity android:name="com.netease.engagement.activity.ActivityAction" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+        
+         <activity android:name="com.netease.engagement.activity.ActivityVideoList" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+         
+          <activity android:name="com.netease.engagement.activity.ActivityVideoRec" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+          
+          <activity android:name="com.netease.engagement.activity.ActivityVideoPlay" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+        
+        <activity android:name="com.netease.engagement.activity.ActivityUserPage" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ActionBarThemeOverlay"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityImageList" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ActionBarThemeOverlay"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityPrivateImage" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ActionBarThemeOverlay"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityChatImage" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/ActionBarThemeOverlay"/>
+        
+        <activity android:name="com.netease.engagement.activity.ActivityComplain" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"
+            />
+        
+        <activity android:name="com.netease.engagement.activity.ActivityChatPriPicList" 
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name="com.netease.engagement.image.cropimage.ActivityCropImage"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name="com.netease.engagement.image.cropimage.MonitoredActivity"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity
+            android:name="com.netease.engagement.activity.ActivityExternalLogin"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.netease.engagement.activity.ActivitySetting"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/NimberPickerTheme" >
+        </activity>
+         <activity android:name="com.netease.engagement.activity.ActivityDownload"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog">
+        </activity> 
+        <activity
+            android:name="com.netease.engagement.activity.ActivityInvite"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.netease.engagement.activity.ActivityProfileExplore"
+            android:configChanges="orientation|keyboardHidden">
+         </activity>
+         <activity
+            android:name="com.netease.engagement.activity.ActivityFire"
+            android:configChanges="orientation|keyboardHidden">
+         </activity>
+         <activity
+            android:name="com.netease.engagement.activity.ActivityAppCenter"
+            android:configChanges="orientation|keyboardHidden">
+         </activity>
+        <activity
+            android:name="com.netease.engagement.activity.ActivityPicShowOffForFemale"
+            android:configChanges="orientation|keyboardHidden">
+         </activity>
+
+        <!--照片统一上传入口  -->         
+         <activity
+             android:name="com.netease.engagement.activity.ActivityPicUploadEntrance"
+             android:configChanges="orientation|keyboardHidden" >
+         </activity>
+          <activity
+             android:name="com.netease.engagement.activity.ActivityMyShow"
+             android:launchMode="singleTask"
+             android:configChanges="orientation|keyboardHidden" >
+         </activity>
+         
+        
+        <!-- 视频相关 -->
+        <activity
+            android:name="com.netease.android.activity.CamcorderActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="false" >
+        </activity>
+        
+        <activity
+            android:name="com.netease.android.activity.VideoCoverActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity
+            android:name="com.netease.android.activity.VideoPreviewActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.netease.android.activity.VideoEditActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        
+        <service android:name = "com.netease.service.media.MediaPlayerService" />
+        
+        <provider
+            android:name="com.netease.service.db.EgmDBProviderExport"
+            android:authorities="com.netease.date.export" 
+            android:grantUriPermissions="true"
+            android:exported="true" 
+        />
+        <provider
+            android:name="com.netease.service.db.EgmDBProvider"
+            android:authorities="com.netease.date" 
+            android:grantUriPermissions="false"
+            android:permission="com.netease.date.PERMISSION_WITH_SIGNATURE"
+        />
+        
+        <!-- 推送平台相关 --> 	
+           <service
+	            android:name="com.netease.pushservice.core.PushLMessageService_V1"
+	            android:enabled="true"
+	            android:label="NetEasePushLMessageService_V1"
+	            android:process="com.netease.pomelo.push.l.messageservice_V1" >
+	            <intent-filter>
+	                <action android:name="netease.pomelo.push.l.messageservice_V1" />
+	            </intent-filter>
+        	</service>
+           
+        	
+        <!-- 开机自动启动与Service关闭后自动重启receiver配置 -->
+        <receiver android:name="com.netease.pushservice.receiver.PushServiceBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.netease.pushservice.receiver.PushServicePackageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- 重连和系统配置获取receiver配置 -->
+       <receiver  android:name="com.netease.pushservice.receiver.PushServiceSystemReceiver">
+            <intent-filter>
+                <action android:name="y.163.com_S5" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver  android:name="com.netease.pushservice.receiver.PushServiceReconnectReceiver">
+            <intent-filter>
+                <action android:name="com.netease.pomelo.pushservice.reconnect_S5" >
+                </action>
+            </intent-filter>
+        </receiver>
+        
+        
+        <!-- 接收push消息receiver配置 -->
+        <receiver
+            android:name="com.netease.engagement.pushMsg.MessageListener" >
+            <intent-filter>
+                <action android:name="y.163.com_G5" >
+                </action>
+            </intent-filter>
+        </receiver>
+        
+        <!-- 推送平台相关 -->
+        
+        <!-- 网络环境转换 -->
+        <receiver android:name="com.netease.common.receiver.NetworkReceiver">
+            <intent-filter >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        
+        <!-- SDCard 变换 -->
+        
+        <receiver android:name="com.netease.common.receiver.SdcardReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+		</receiver>
+		<!--下载Apk自动打开 ,将来需要再加上 -->
+<!-- 		<receiver android:name="com.netease.common.receiver.DownLoaderReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver> -->
+        
+</application>
+    
+</manifest>

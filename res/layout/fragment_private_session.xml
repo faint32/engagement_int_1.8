@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <ImageSwitcher
+        android:id="@+id/bgIS"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:src="@drawable/bg_message_all" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+        <include
+            android:id="@+id/private_session_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/view_emot_layout" 
+            />
+    
+        <com.handmark.pulltorefresh.compat.LoadingListView
+            android:id="@+id/msg_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/private_session_bottom"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" 
+            >
+        </com.handmark.pulltorefresh.compat.LoadingListView>
+        
+        <com.netease.engagement.view.SnowView
+	        android:id="@+id/snowView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+        
+        <ImageView
+            android:id="@+id/fire_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginEnd="15dip"
+            android:layout_alignRight="@id/msg_list"
+            android:layout_alignEnd="@id/msg_list"
+            android:layout_alignBottom="@id/msg_list"
+            android:tag="0"
+            android:contentDescription="@string/pic" />
+        
+        <TextView
+	        android:id="@+id/yixin_tip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentEnd="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="@dimen/info_margin_8dp"
+	        android:layout_marginEnd="@dimen/info_margin_8dp"
+	        android:layout_marginTop="@dimen/info_margin_8dp"
+	        android:background="@drawable/icon_pgchat_yixin" 
+            android:visibility="gone"
+        />
+
+        <!-- 
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/view_topic_layout" />
+        -->
+        
+        <RelativeLayout
+            android:id="@+id/talk_skill_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/double_click_record_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/private_session_bottom"
+            android:background="@drawable/bg_message_all"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/record_guide_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="176dp"
+                android:src="@drawable/double_tap"
+                android:contentDescription="@string/pic" />
+
+            <TextView
+                android:id="@+id/record_guide_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/dialog_guide_label"
+                android:textColor="@color/content_text"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+        
+	    <include
+	        android:id="@+id/xiaoai_bottom_layout"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dip"
+			layout="@layout/view_xiaoai_bottom_layout"/>
+
+	    
+	</RelativeLayout>
+
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+            
+            <com.netease.engagement.view.RecordTipView
+		        android:id="@+id/record_tip"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:visibility="gone" 
+		        />
+            
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_audio_record_bg_height"
+            android:orientation="vertical" >
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

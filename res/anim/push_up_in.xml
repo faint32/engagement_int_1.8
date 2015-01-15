@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 假的渐变动画，用于界面切换时避免因为没有设置动画导致界面变黑 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+	<translate android:fromYDelta="100%p" android:toYDelta="0" android:duration="300"/>
+</set>

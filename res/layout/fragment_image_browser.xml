@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+    <com.netease.engagement.view.ImageViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/info_margin_4dp"
+        android:paddingRight="@dimen/info_margin_4dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/info_margin_20dp"
+        android:background="@drawable/bg_pgviewphoto_bottom_bar_photonum"
+        android:textSize="@dimen/info_more_data_txt_size"
+        android:textColor="@color/white"/>
+    <ImageView 
+        android:id="@+id/delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/btn_delete_man_image_selector"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="@dimen/info_margin_20dp"
+        android:layout_marginBottom="@dimen/info_margin_20dp"
+        />
+</FrameLayout>

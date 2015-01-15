@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 排行榜列表Activity界面布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView 
+    	android:id="@+id/rank_list"  
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"  
+    	android:scrollbars="vertical"
+		android:cacheColorHint="#00000000"
+		android:fadingEdge="none"
+	    android:fadingEdgeLength="0dp"
+	    android:fastScrollEnabled="false"
+	    android:scrollingCache="false"
+	    android:divider="@null"
+    />
+</FrameLayout>

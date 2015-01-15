@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/chat_yixin_friend_tip_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_8dp"
+        android:layout_marginRight="@dimen/info_margin_8dp"
+        android:background="@drawable/bg_pgchat_yixintips"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/yixin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_pgchat_yixintips_yixin" />
+
+        <TextView
+            android:id="@+id/yixin_friend_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/yixin_friends_tip"
+            android:textColor="@color/content_text"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tips_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_pgchat_yixintips_close"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="register_change_avatar">
+        <item>@string/change_avatar_from_camera</item>
+        <item>@string/change_avatar_from_album</item>
+    </string-array>
+    
+    <string-array name="upload_picture">
+        <item>@string/rec_upload_private_picture</item>
+        <item>@string/rec_upload_public_picture</item>
+    </string-array>
+        <string-array name="upload_picture_for_showoff">
+        <item>@string/change_avatar_from_camera</item>
+        <item>@string/change_avatar_from_album</item>
+    </string-array>
+</resources>

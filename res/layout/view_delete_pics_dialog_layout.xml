@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/delete_pics_layout_width"
+    android:layout_height="wrap_content"
+    android:background="@color/pri_delete_dialog_back_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_64dp"
+        android:layout_marginTop="@dimen/info_margin_20dp"
+        android:layout_marginBottom="@dimen/info_margin_20dp"
+        android:padding="@dimen/info_margin_8dp"
+        android:gravity="center"
+        android:text="删除这张照片？"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:background="@color/pri_delete_dialog_divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/pri_header_back"
+            android:textSize="@dimen/text_size_20" />
+
+        <View
+            android:layout_width="@dimen/info_divider_line_height"
+            android:layout_height="match_parent"
+            android:background="@color/pri_delete_dialog_divider_color" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/pri_header_back"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+</LinearLayout>

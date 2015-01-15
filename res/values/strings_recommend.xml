@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rec_recommend_title">今日推荐</string>
+    <string name="rec_recommend_title_male">女神来了</string>
+	<string name="rec_recommend_title_female">求搭讪</string>
+    
+	<string name="rec_select_position_content1">请选择你所在的城市</string>
+	<string name="rec_select_position_content2">以便向你推荐附近的人</string>
+	
+	<string name="rec_btn_select_position">选择省/市</string>
+	<string name="rec_tip_upload_pic_dialog_title">欢迎你，未来的女神</string>
+	<string name="rec_tip_upload_pic_dialog_sub_title">在【女神来了】，男士为讨你欢心，看你的私密照片，会送你礼物哦！</string>
+	<string name="rec_tip_upload_pic_dialog_item1">大胆秀，晒出你的魅力</string>
+	<string name="rec_tip_upload_pic_dialog_item2">给男人留点幻想</string>
+	<string name="rec_tip_upload_pic_dialog_item3">注意尺度，保护自己</string>
+	<string name="rec_tip_upload_pic_dialog_bottom_tip">来，传几张女神范儿的照片吧</string>
+	<string name="rec_tip_upload_pic_dialog_btn">上传照片</string>
+	<string name="rec_upload_picture_private">上传私密照片</string>
+	<string name="rec_upload_picture_public">上传公开照片</string>
+	<string name="rec_tip_freshman_gif1">新手礼物</string>
+	<string name="rec_tip_freshman_gif2">您获得10个礼物，快去送给性感的女神</string>
+	<string name="rec_tip_select_avatar1">头像未通过审核</string>
+	<string name="rec_tip_select_avatar2">现在粉丝们都认不出你了</string>
+    <string name="rec_tip_select_avatar2_male">女神们喜欢露脸的帅哥哦</string>
+    <string name="rec_tip_select_avatar2_female">土豪们期待你美丽的容颜</string>
+	<string name="rec_tip_select_avatar3">您还未上传头像</string>
+	<string name="rec_tip_reselect_avatar">请重新上传头像</string>
+	<string name="rec_tip_upload_position_success">上传地理位置成功</string>
+	<string name="rec_tip_select_position_faild">请选择位置</string>
+	<string name="rec_tip_upload_pic_content1">你还没有一张让男人心动的照片</string>
+	<string name="rec_tip_upload_pic_content2">别害羞哦</string>
+    <string name="rec_tip_upload_pic_content1_female">土豪们正深深的</string>
+    <string name="rec_tip_upload_pic_content2_female">渴望着你的美丽照片…</string>
+	<string name="rec_tip_self_info_content1">向人家介绍一下你自己</string>
+	<string name="rec_tip_self_info_content2">轻松获得更多关注哦</string>
+    <string name="rec_tip_self_info_content1_female">多透露点信息给土豪</string>
+    <string name="rec_tip_self_info_content2_female">激起他的好奇心</string>
+	<string name="rec_tip_self_info_btn">完善个人资料</string>
+	<string name="rec_tip_update_pic_content1">好久没更新啦亲</string>
+	<string name="rec_tip_update_pic_content2">大家迫不及待想看你的新照片呢</string>
+	<string name="rec_tip_open_yuanfen_content">开启\"碰缘分\"，多收获5倍礼物</string>
+	<string name="rec_tip_open_yuanfen_btn">开启碰缘分</string>
+	
+	<string name="rec_age_haoqi">%1$d岁&#160;&#160;豪气值%2$d</string>
+	<string name="rec_private_pic_count">%1$s</string>
+	<string name="rec_female_age">%1$d岁</string>
+	<string name="rec_female_heigh">%1$dcm</string>
+	<string name="rec_female_figure">三围&#160;%1$s</string>
+	<string name="rec_female_level">LV%1$d&#160;%2$s</string>
+	<string name="rec_list_footview_tip">极品女神，仅限VIP会员联系。</string>
+	<string name="rec_list_footview_openup_vip">立即开通</string>
+	<string name="rec_list_footview_vip_tip2">VIP 会员限定</string>
+	<string name="rec_list_footview_top_female_title">TOP女神榜</string>
+	
+	<string name="rec_shortcut_photo">传照片</string>
+	<string name="rec_shortcut_yuanfen">碰缘分</string>
+	<string name="rec_shortcut_yuanfen_open">碰缘分(已开启)</string>
+	<string name="rec_shortcut_me">看看我</string>
+	<string name="rec_shortcut_talk">聊天技</string>
+	<string name="rec_shortcut_cash">兑现</string>
+	
+	<string name="rec_yuanfen_voice_title1">录句话，向有缘人打个招呼</string>
+	<string name="rec_yuanfen_voice_title2">缘分碰撞中，随时擦出激情的火花</string>
+	<string name="rec_yuanfen_text_title">写一句话，打动每一个有缘人</string>
+	<string name="rec_yuanfen_tab_voice">录语音</string>
+	<string name="rec_yuanfen_tab_text">写文字</string>
+	<string name="rec_yuanfen_help_me">帮我写</string>
+	<string name="rec_yuanfen_help_me_change">换一句</string>
+	<string name="rec_yuanfen_re_record">重录</string>
+	<string name="rec_yuanfen_switcher_tip">缘分被残忍的拒绝了，重新开启吧？</string>
+	<string name="rec_yuanfen_save">保存</string>
+	<string name="rec_yuanfen_press_record">按住录音</string>
+	<string name="rec_yuanfen_send_err_title">上传遇到问题</string>
+	<string name="rec_yuanfen_resend">重新上传</string>
+	<string name="rec_yuanfen_tip_text_empty">内容为空</string>
+	<string name="rec_yuanfen_tip_save">已保存，将自动发给你的有缘人</string>
+	<string name="rec_yuanfen_tip_open">开启碰缘分</string>
+	<string name="rec_yuanfen_open">碰缘分已开启</string>
+	<string name="rec_yuanfen_tip_not_open">内容未填写，碰缘分未开启</string>
+	<string name="rec_yuanfen_title">碰缘分</string>
+	<string name="rec_yuanfen_gift_tips">给男人们传张小纸条吧，不要开口就要礼物哦</string>
+	
+	<string-array name="rec_yuanfen_more_array">
+        <item>关闭碰缘分</item>
+    </string-array>
+    
+	<string name="rec_nvshen_skill">女神技</string>
+	<string name="rec_chatskill_title">聊天技</string>
+	<string name="rec_chatskill_choose">选择聊天技</string>
+	<string name="rec_chatskill_max_choose">最多选6个</string>
+	<string name="rec_chatskill_desc">在聊天中秀聊天技，获得土豪打赏</string>
+	<string name="rec_chatskill_chat_desc">聊天技是她的特殊聊天技能，能在聊天中给你惊喜，感觉好玩就打赏她吧！</string>
+	
+	<string-array name="rec_chatskill_default_array">
+        <item>哇，你这么美，又这么有才，交个朋友吧！</item>
+		<item>我什么都不会，特别羡慕别人多才多艺</item>
+		<item>美女，你小时候是不是练过？</item>
+		<item>我已经准备好了，妹妹你有什么招就使出来吧！</item>
+		<item>美女，我感觉你是少见的人才！</item>
+		<item>见过的美女也不少啦，你给我的印象很特别</item>
+		<item>小姑娘会的东西不少啊，好厉害</item>
+		<item>我好像在哪里见过你，你是不是得过什么奖？</item>
+		<item>妹妹你怎么会这么多东西啊，教教我？</item>
+		<item>成天聊聊聊都烦了，妹妹，我知道你能来点不一样的</item>
+    </string-array>
+	
+	
+	<string name="rec_upload_private_picture">上传私密照片</string>
+	<string name="rec_upload_public_picture">上传公开照片</string>
+	<string name="rec_upload_picture_waitting">上传中...</string>
+	<string name="rec_upload_picture_result">上传成功%1$d张，失败%2$d张</string>
+	<string name="rec_upload_picture_result2">上传成功</string>
+	
+	<string name="rec_select_position_title">所在地区</string>
+	
+	<string name="rec_search_item_age">年龄</string>
+	<string name="rec_search_item_astro">星座</string>
+	<string name="rec_search_item_area">地区</string>
+	<string name="rec_search_item_private_pic">需有私照</string>
+	<string name="rec_search_item_income">收入</string>
+	<string name="rec_search_age_default">18-25</string>
+	<string name="rec_search_no_limit">不限</string>
+	<string name="rec_search_select_age_title">选择年龄</string>
+	<string name="rec_search_result">搜索结果</string>
+	<string name="rec_search_result_empty">暂时没有符合您要求的会员，建议您适当放宽搜索条件</string>
+	<string name="rec_search_age_height_breast">%1$d岁&#160;&#160;%2$dcm&#160;&#160;%3$s</string>
+	
+	<string name="rec_comption_count">%1$d/%2$d</string>
+	<string name="pic_showoff_title">专题详情</string>
+	<string name="avatar_select_failed_tips">头像选择失败，请重新选择</string>
+</resources>

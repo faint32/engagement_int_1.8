@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用 -->
+    <dimen name="common_avatar_size">38.33dp</dimen>
+    <dimen name="common_avatar_size_50">33.33dp</dimen>
+    <dimen name="common_avatar_rounder">9px</dimen>
+    <dimen name="title_bar_height">48dip</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="layout_padding">16dip</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="divider_height_1">1dip</dimen>
+    <dimen name="list_item_heigh">56dip</dimen>
+    <dimen name="list_item_padding_top_bottom">12dip</dimen>
+    <dimen name="dialog_title_height">62dip</dimen>
+    
+    <dimen name="set_avatar_size">100dip</dimen>	<!-- 设置头像的尺寸 -->
+    
+    <dimen name="user_page_head_size">150dp</dimen>
+    
+     <!-- 公用的一些pading值 针结xh标注-->
+    <dimen name="padding_60">30dp</dimen>
+    <dimen name="padding_40">20dp</dimen>
+    <dimen name="padding_35">17.5dp</dimen>
+    <dimen name="padding_30">15dp</dimen>
+    <dimen name="padding_25">12.25dp</dimen>
+    <dimen name="padding_20">10dp</dimen>
+    <dimen name="padding_15">7.5dp</dimen>
+    <dimen name="padding_10">5dp</dimen>
+    
+    <dimen name="dialog_item_height">60dip</dimen>
+    
+    <!-- 登录注册 -->
+    <dimen name="reg_layout_title_content_padding">48dip</dimen>
+    <dimen name="reg_input_line_margin_top">32dip</dimen>
+    <dimen name="reg_account_recommend_footer_height">99dip</dimen>
+    
+    <!-- 推荐 -->
+    <dimen name="rec_list_avatar_size">68dip</dimen>
+    
+    <!-- 排行 -->
+    <dimen name="rank_item_max_height">220dip</dimen>
+    <dimen name="rank_item_min_height">110dip</dimen>
+    <dimen name="rank_item_text_max_size">29sp</dimen>
+    <dimen name="rank_item_text_min_size">16sp</dimen>
+    <dimen name="rank_item_text_sub_max_size">15sp</dimen>
+    <dimen name="rank_item_text_sub_min_size">10sp</dimen>
+    <dimen name="rank_item_text_size_delta">0.4dip</dimen>
+    
+    <!-- 会员资料 -->
+    <dimen name="info_private_image_list_height">320dp</dimen>
+    <dimen name="info_private_image_list_top">76dp</dimen>
+    
+    <dimen name="info_margin_1dp">1dp</dimen>
+    <dimen name="info_margin_2dp">2dp</dimen>
+    <dimen name="info_margin_3dp">3dp</dimen>
+    <dimen name="info_margin_4dp">4dp</dimen>
+    <dimen name="info_margin_5dp">5dp</dimen>
+    <dimen name="info_margin_6dp">6dp</dimen>
+    <dimen name="info_margin_7dp">7dp</dimen>
+    <dimen name="info_margin_8dp">8dp</dimen>
+    <dimen name="info_margin_9dp">9dp</dimen>
+    <dimen name="info_margin_10dp">10dp</dimen>
+    <dimen name="info_margin_12dp">12dp</dimen>
+    <dimen name="info_margin_14dp">14dp</dimen>
+    <dimen name="info_margin_16dp">16dp</dimen>
+    <dimen name="info_margin_17dp">17dp</dimen>
+    <dimen name="info_margin_20dp">20dp</dimen>
+    <dimen name="info_margin_22dp">22dp</dimen>
+    <dimen name="info_margin_24dp">24dp</dimen>
+    <dimen name="info_margin_28dp">28dp</dimen>
+    <dimen name="info_margin_32dp">32dp</dimen>
+    <dimen name="info_margin_36dp">36dp</dimen>
+    <dimen name="info_margin_40dp">40dp</dimen>
+    <dimen name="info_margin_45dp">45dp</dimen>
+    <dimen name="info_margin_48dp">48dp</dimen>
+    <dimen name="info_margin_56dp">56dp</dimen>
+    <dimen name="info_margin_60dp">60dp</dimen>
+    <dimen name="info_margin_61dp">61dp</dimen>
+    <dimen name="info_margin_64dp">64dp</dimen>
+    <dimen name="info_margin_72dp">72dp</dimen>
+    <dimen name="info_margin_80dp">80dp</dimen>
+    <dimen name="info_margin_120dp">120dp</dimen>
+    <dimen name="info_margin_160dp">160dp</dimen>
+    <dimen name="info_main_page_bottom_height">52dp</dimen>
+    <dimen name="info_divider_line_height">0.5dp</dimen>
+    <dimen name="info_gift_tip_height">88dp</dimen>
+    <dimen name="info_enke_item_height">68dp</dimen>
+    <dimen name="info_level_progress_width">176dp</dimen>
+    <dimen name="info_gift_pager_height">180dp</dimen>
+    <dimen name="delete_pics_layout_width">312dp</dimen>
+    
+    <dimen name="info_txt_size_17">17sp</dimen>
+    <dimen name="info_main_page_bottom_txt_size">10sp</dimen>
+    <dimen name="info_level_txt_size">12sp</dimen>
+    <dimen name="info_gift_name_txt_size">13sp</dimen>
+    <dimen name="info_more_data_txt_size">14sp</dimen>
+    <dimen name="info_audio_txt_size">16sp</dimen>
+    <dimen name="info_enke_item_txt_size">30sp</dimen>
+    <dimen name="info_complain_text_size">16sp</dimen>
+    
+    <dimen name="chat_divider_margin_left">76dp</dimen>
+    <dimen name="chat_emot_item_padding">12.5dp</dimen>
+    <dimen name="chat_audio_record_tip_layout_height">84dp</dimen>
+    <dimen name="chat_audio_record_bg_height">271dp</dimen>
+    <dimen name="chat_audio_record_tip_time_size">37sp</dimen>
+    <dimen name="chat_audio_record_tip_gesture_size">15sp</dimen>
+    <dimen name="chat_list_image_max_height">120dp</dimen>
+    <dimen name="chat_topic_view_margin">68dp</dimen>
+    <dimen name="chat_title_middle_size">20sp</dimen>
+    <dimen name="chat_gift_right_width">128dp</dimen>
+    <dimen name="chat_video_rec_time_width">77dp</dimen>
+    <dimen name="money_account_lisence_text">13sp</dimen>
+    <!-- 设置 -->
+    <dimen name="set_push_sub_margin">24dp</dimen>
+    
+    <dimen name="chat_list_video_image_width">90dp</dimen>
+    <dimen name="chat_list_video_image_height">140dp</dimen>
+    
+    <dimen name="chat_fire_video_image_width">240dp</dimen>
+    <dimen name="chat_fire_video_image_height">180dp</dimen>
+    
+    <dimen name="money_account_btn_text_size">15sp</dimen>
+    <dimen name="money_account_money_margin_top">1dip</dimen>
+    <dimen name="money_account_money_margin_bottom">1dip</dimen>
+    <dimen name="money_account_charm_margin_top">5dip</dimen>
+    <dimen name="money_account_charm_margin_bottom">5dip</dimen>
+    <dimen name="money_account_btn_margin_bottom">25dip</dimen>
+    
+    <dimen name="money_account_split_margin">10dp</dimen>
+    
+    <dimen name="splash_margin_bottom1">18dip</dimen>
+    <dimen name="splash_margin_top1">14dip</dimen>
+    <dimen name="splash_margin_top2">6dip</dimen>
+    
+    <dimen name="userpage_animation_data_off">70dp</dimen>
+    <dimen name="userpage_avatar_border_dp">12dp</dimen>
+    <dimen name="userpage_profile_audio_margin_left">42dp</dimen>
+    <dimen name="userpage_bottom_layout_button_width">80dp</dimen>
+
+    <dimen name="pripage_sysportrait_width">90dp</dimen>
+    
+     <!-- 大照片加载环形进度条 -->
+    <dimen name="circle_progressbar_radius">20dp</dimen>
+    <dimen name="circle_progressbar_stroke_width">4dp</dimen>
+    <dimen name="chat_firstgift_dialog_width">312dp</dimen> 
+    
+    <dimen name="identity_auth_video_scroll">200dp</dimen>
+    
+</resources>

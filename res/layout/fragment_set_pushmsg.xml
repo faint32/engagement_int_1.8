@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 消息开关 -->
+
+    <RelativeLayout
+        android:id="@+id/set_msg_swithc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_heigh"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/msg_set_switch"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.netease.engagement.widget.SlideSwitch
+            android:id="@+id/switch_msg"
+            style="@style/switch_style_settting"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/set_all_sub_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 分隔线 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_divider_line_height"
+            android:background="@color/list_divider_line_color" />
+
+        <!-- 声音 -->
+
+        <RelativeLayout
+            android:id="@+id/set_sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_heigh"
+            android:background="@color/set_push_sub_item_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/set_push_sub_margin"
+            android:paddingRight="@dimen/layout_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_set_sound"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.netease.engagement.widget.SlideSwitch
+                android:id="@+id/switch_sound"
+                style="@style/switch_style_settting"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_divider_line_height"
+            android:layout_marginLeft="@dimen/set_push_sub_margin"
+            android:layout_marginRight="@dimen/set_push_sub_margin"
+            android:background="@color/list_divider_line_color" />
+
+        <!-- 振动 -->
+
+        <RelativeLayout
+            android:id="@+id/set_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_heigh"
+            android:background="@color/set_push_sub_item_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/set_push_sub_margin"
+            android:paddingRight="@dimen/layout_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_set_vibrate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.netease.engagement.widget.SlideSwitch
+                android:id="@+id/switch_vibrate"
+                style="@style/switch_style_settting"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- 分隔线 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_divider_line_height"
+            android:layout_marginLeft="@dimen/set_push_sub_margin"
+            android:layout_marginRight="@dimen/set_push_sub_margin"
+            android:background="@color/list_divider_line_color" />
+
+        <!-- 免打扰 -->
+
+        <RelativeLayout
+            android:id="@+id/set_no_disturbing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_heigh"
+            android:background="@color/set_push_sub_item_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/set_push_sub_margin"
+            android:paddingRight="@dimen/layout_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_set_no_disturbing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.netease.engagement.widget.SlideSwitch
+                android:id="@+id/switch_no_disturbing"
+                style="@style/switch_style_settting"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/set_time_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 分隔线 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/info_divider_line_height"
+                android:layout_marginLeft="@dimen/set_push_sub_margin"
+                android:layout_marginRight="@dimen/set_push_sub_margin"
+                android:background="@color/list_divider_line_color" />
+
+            <!-- 免打扰时间段 -->
+
+            <RelativeLayout
+                android:id="@+id/set_period"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_heigh"
+                android:background="@color/set_push_sub_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/set_push_sub_margin"
+                android:paddingRight="@dimen/layout_padding" >
+
+                <TextView
+                    android:id="@+id/set_period_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tag_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_pginfo_arrow_view_photo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 分隔线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:background="@color/list_divider_line_color" />
+
+    <!-- 听筒模式 -->  
+     <RelativeLayout
+        android:id="@+id/set_audio_play_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_heigh"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/msg_set_audio_play_mode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.netease.engagement.widget.SlideSwitch
+            android:id="@+id/switch_audio_play_mode"
+            style="@style/switch_style_settting"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <!-- 分隔线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_divider_line_height"
+        android:background="@color/list_divider_line_color" />
+</LinearLayout>

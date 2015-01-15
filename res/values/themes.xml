@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ActionBarWithPickerTheme" parent="ActionBarTheme">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+    
+    <style name="NimberPickerTheme" parent="ActionBarWithPickerTheme">
+        <item name="selectionDivider">@drawable/simonvt_np_numberpicker_selection_divider</item>
+        <item name="selectionDividerHeight">2dip</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">180dip</item>
+    </style>
+
+</resources>

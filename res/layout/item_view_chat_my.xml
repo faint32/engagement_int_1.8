@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+	
+    <!-- 自身部分 -->
+
+    <LinearLayout
+        android:id="@+id/my_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/info_margin_10dp"
+        android:paddingTop="@dimen/info_margin_10dp"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+        <TextView
+            android:id="@+id/my_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/icon_clock_gray"
+            android:drawableStart="@drawable/icon_clock_gray"
+            android:drawablePadding="@dimen/info_margin_4dp"
+            android:textColor="@color/info_audio_txt_color"
+            android:textSize="@dimen/info_level_txt_size"
+            android:paddingBottom="@dimen/info_margin_4dp"
+        	android:paddingTop="@dimen/info_margin_4dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/info_margin_14dp"
+            android:paddingStart="@dimen/info_margin_14dp"
+            android:layout_marginTop="@dimen/info_margin_14dp" 
+            >
+            <com.netease.engagement.view.HeadView
+                android:id="@+id/my_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/info_margin_16dp" 
+                android:layout_marginEnd="@dimen/info_margin_16dp"
+                >
+            </com.netease.engagement.view.HeadView>
+
+            <RelativeLayout
+                android:id="@+id/msg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/my_profile" 
+                android:layout_toStartOf="@id/my_profile"
+                android:layout_marginRight="@dimen/info_margin_6dp"
+                android:layout_marginEnd="@dimen/info_margin_6dp"
+                >
+                
+                <RelativeLayout android:id="@+id/user_container_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/info_margin_16dp"
+                    android:layout_marginStart="@dimen/info_margin_16dp">
+                
+	                <RelativeLayout
+	                    android:id="@+id/my_container_layout"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="@dimen/info_margin_6dp"
+	                    android:layout_marginStart="@dimen/info_margin_6dp"
+	                	android:layout_marginTop="@dimen/info_margin_6dp" />
+	                
+	                <ProgressBar
+		                android:id="@+id/sending"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentStart="true"
+		                android:layout_alignParentTop="true"
+		                style="?android:attr/progressBarStyleSmall"
+		                android:indeterminateDrawable="@drawable/bg_chat_progressbar"
+		                android:visibility="gone" 
+	                />
+	                
+	                <ImageView
+		                android:id="@+id/failed"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:layout_alignParentStart="true"
+		                android:layout_alignParentTop="true"
+		                android:background="@drawable/icon_mesg_fail_tip"
+		                android:contentDescription="@string/pic"
+		                android:visibility="gone" 
+		                />
+	                
+                </RelativeLayout>
+                
+                <ProgressBar android:id="@+id/fire_progressbar"
+	                android:layout_width="wrap_content"
+	                android:layout_height="3dp"
+	                android:layout_marginTop="4dp"
+	                android:layout_marginRight="6dp"
+	                android:layout_marginLeft="@dimen/info_margin_6dp"
+	                android:layout_below="@id/user_container_layout"
+	                android:layout_alignLeft="@id/user_container_layout"
+	                android:layout_alignRight="@id/user_container_layout"
+	                style="?android:attr/progressBarStyleHorizontal"
+	                android:progressDrawable="@drawable/list_fire_progressbar"
+	                android:visibility="gone"/>
+                
+                <ImageView
+                    android:id="@+id/fire_icon"
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBottom="@id/user_container_layout"
+	                android:background="@drawable/icon_pgchat_fire_s_gray"
+	                android:contentDescription="@string/pic"
+	                android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/keywords_match_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/info_margin_10dp"
+            android:layout_marginRight="@dimen/info_margin_16dp"
+            android:layout_marginLeft="@dimen/info_margin_16dp"
+            android:padding="@dimen/info_margin_10dp" 
+            android:background="@drawable/bg_tips_yixin"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/keywords_match_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:lineSpacingExtra="@dimen/info_margin_4dp"/>
+            <TextView
+                android:id="@+id/keywords_match_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_4dp"
+                android:layout_gravity="right"
+                android:textColor="@color/chat_keyword_match_op_text"
+                android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

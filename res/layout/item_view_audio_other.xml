@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="top" >
+    
+    <RelativeLayout 
+        android:id="@+id/audio_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mesg_white"
+        >
+		<TextView
+	        android:id="@+id/item_view_info_audio_anim"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginStart="4dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentStart="true"
+	        android:background="@drawable/icon_speaker_anim_chat_list_other"/>
+		
+		
+		<ImageView
+			    android:id="@+id/item_view_info_audio_no_play"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentEnd="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginTop="3dip"
+		        android:layout_marginRight="3dip"
+		        android:layout_marginEnd="3dip"
+		        android:background="@drawable/icon_pgchat_audio_no_play"
+		        android:contentDescription="@string/pic" />
+		
+		<TextView 
+		        android:id="@+id/item_view_info_audio_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="-3dip"
+		        android:layout_marginEnd="-3dip"
+		        android:layout_toLeftOf="@id/item_view_info_audio_no_play"
+		        android:layout_toStartOf="@id/item_view_info_audio_no_play"
+		        android:textSize="@dimen/info_level_txt_size"
+		        android:textColor="@color/info_audio_txt_color" />
+
+	</RelativeLayout>
+	
+</LinearLayout>

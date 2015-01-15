@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pgchat_fire"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="3" >
+    	
+        <TextView
+            android:id="@+id/durationTv"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:layout_alignParentBottom="true"
+    		android:textSize="40sp"
+    		android:textColor="@color/white" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:layout_above="@id/durationTv"
+    		android:text="@string/play_fire_audio"
+    		android:textSize="25sp"
+    		android:textColor="@color/white" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="2" >
+        
+        <com.netease.engagement.widget.ProgressImageView
+            android:id="@+id/progressIv"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:background="@drawable/bg_pgrecommendlist_bottom_white_circle"
+    		android:contentDescription="@string/pic" />
+        
+        <ImageView
+            android:id="@+id/playIv"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:background="@drawable/btn_to_play_selector"
+    		android:contentDescription="@string/pic" />
+        
+        <ImageView
+            android:id="@+id/stopIv"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:background="@drawable/btn_play_end_selector"
+    		android:contentDescription="@string/pic"
+    		android:visibility="gone" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="3" >
+        
+        <TextView
+            android:id="@+id/fireTv"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:layout_alignParentTop="true"
+    		android:background="@drawable/button_cancle_voice_selector"
+    		android:text="@string/fire"
+    		android:textColor="@color/white"
+    		android:gravity="center" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

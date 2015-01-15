@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/info_tag_back_color" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/info_margin_32dp"
+        android:background="@color/pri_info_list_active"
+        android:focusable="true"  
+		android:focusableInTouchMode="true"   >
+        
+        <TextView
+	        android:id="@+id/tv"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="@dimen/info_margin_16dp"
+	    	android:layout_centerVertical="true"
+	    	android:text="@string/complain_hint"
+	    	android:textColor="@color/info_audio_txt_color"
+	    	android:textSize="15sp" />
+        
+        <ImageView
+	        android:layout_width="match_parent"
+	    	android:layout_height="1dp"
+	    	android:layout_alignParentBottom="true"
+	    	android:background="@color/list_divider_line_color"
+	    	android:contentDescription="@string/pic" />
+        
+    </RelativeLayout>
+    
+    <!-- 商业广告 -->
+    <include 
+        android:id="@+id/advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 淫秽图片（对应原来的色情交易） -->
+ 	<include 
+        android:id="@+id/porn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 文字语音不文明侮辱他人 -->
+    <include 
+        android:id="@+id/insult"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 资料虚假 -->
+    <include 
+        android:id="@+id/sham"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 诈骗（对应原来的诈骗钱财） -->
+    <include 
+        android:id="@+id/cheat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 不当政治言论 -->
+    <include 
+        android:id="@+id/political"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <!-- 性交易 -->
+    <include 
+        android:id="@+id/sextrade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    
+    <!-- 其他（对应原来的举报投诉） -->
+    <include 
+        android:id="@+id/complain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_60dp"
+        layout="@layout/view_item_complain_type"
+        />
+    
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+    
+		<EditText 
+		    android:id="@+id/content"
+		    android:layout_width="match_parent"
+		    android:padding="@dimen/info_margin_8dp"
+		    android:gravity="left|top"
+		    android:layout_marginTop="@dimen/info_margin_16dp"
+		    android:layout_marginLeft="@dimen/info_margin_20dp"
+		    android:layout_marginRight="@dimen/info_margin_20dp"
+		    android:background="@drawable/bg_textarea"
+		    android:layout_height="@dimen/info_margin_160dp"
+	        android:hint="@string/complain_hint2"
+		    />
+		
+		<TextView 
+		    android:id="@+id/num_tip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right"
+		    android:layout_marginRight="@dimen/info_margin_20dp"
+		    android:layout_marginTop="@dimen/info_margin_8dp"
+		    android:layout_marginBottom="@dimen/info_margin_8dp"
+		    android:textSize="@dimen/text_size_11"
+		    android:textColor="@color/info_audio_txt_color"
+		    />
+	
+	</LinearLayout>
+	
+</LinearLayout>
+
+</ScrollView>

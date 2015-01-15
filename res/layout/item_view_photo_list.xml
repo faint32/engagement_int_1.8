@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/info_margin_4dp"
+    >
+    <com.netease.engagement.widget.LoadingImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <LinearLayout
+        android:id="@+id/unlock_count_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pri_photolist_locknum_bg_color"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/unlock_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_view"
+            android:drawablePadding="@dimen/info_margin_4dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/info_margin_4dp"
+            android:paddingRight="@dimen/info_margin_4dp"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/unselected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/info_margin_4dp"
+        android:layout_marginBottom="@dimen/info_margin_4dp"
+        android:background="@drawable/icon_photo_selected_cancel_48x48" />
+
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/info_margin_4dp"
+        android:layout_marginBottom="@dimen/info_margin_4dp"
+        android:background="@drawable/icon_photo_selected_ok_48x48"
+        android:visibility="gone" />
+
+</RelativeLayout>

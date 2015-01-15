@@ -1,0 +1,147 @@
+<resources>
+    
+    <string name="app_name">女神来了</string>
+    <!-- common -->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="tip">提示</string>
+    <string name="edit">编辑</string>
+    <string name="done">完成</string>
+    <string name="exit">退出</string>
+    <string name="sucess">成功</string>
+    <string name="failed">失败</string>
+    <string name="upload">上传</string>
+    <string name="search">搜索</string>
+    <string name="setting">设置</string>
+    <string name="account">账户</string>
+    <string name="name">姓名</string>
+    <string name="more">更多</string>
+    <string name="close">关闭</string>
+    <string name="pic">pic</string>
+    <string name="operation">操作</string>
+    <string name="delete">删除</string>
+    <string name="save">保存</string>
+    <!-- common -->
+	
+	<string name="download_failed">下载失败</string>
+	
+	<string name="video">视频</string>
+	<string name="picture">照片</string>
+	<string name="upload_picture">上传照片</string>
+	
+    <string name="abandon">放弃</string>
+    
+    <string name="birthday">生日</string>
+    <string name="birthday_format">%1$d年%2$d月%3$d日</string>
+    <string name="exit_app">退出女神来了？</string>
+    
+    <string name="net_error">网络异常，请稍候再试</string>
+    <string name="common_tip_is_waitting">请稍候</string>
+    <string name="common_tip_is_updating">上传中</string>
+    <string name="common_list_load_more">正在载入</string>
+    <string name="common_content_empty_tip">没有内容</string>
+    <string name="common_reload_tip">点击屏幕，重新加载</string>
+    
+	<!-- setting -->
+    <string name="logout">退出登录</string>
+    <string name="logout_no">暂不退出</string>
+    <string name="logout_yes">退出</string>
+    <string name="setting_logout_tip">退出后保留帐户信息，不清理任何历史数据，下次登录依然可以使用本帐号</string>
+    <string name="setting_msg">消息推送</string> 
+    <string name="setting_feedback">向我们反馈</string> 
+    <string name="setting_checkversion">检查更新</string>
+    <string name="setting_new_version">有新版本啦</string>
+    <string name="setting_update_now">更新</string> 
+    <string name="setting_update_later">暂不更新</string>
+    <string name="setting_newest_version">当前已是最新版</string> 
+    <string name="setting_version_current">当前版本：%1$s</string>
+    <string name="setting_clearcache">清理缓存</string>
+    <string name="setting_clearcache_tip">将清除所有图片、视频、音频缓存</string>
+    <string name="setting_clearcache_ing">清除中</string>
+    <string name="setting_clearcache_no">暂不清除</string>
+    <string name="setting_clearcache_yes">清除</string>
+    <string name="setting_clearcache_done">缓存清除成功</string>
+    <string name="setting_helpcenter">帮助中心</string>
+    <string name="setting_fb_title">用户反馈</string>
+    <string name="setting_fb_hint">欢迎反馈各种的问题或建议</string>
+    <string name="setting_fb_no_content">请填入反馈内容</string>
+    <string name="setting_fb_sucess">提交成功</string>
+    <string name="setting_doing">设置中…</string>
+    <string name="req_waiting">提交中</string>
+    <string name="msg_set_switch">接收消息提醒</string>
+    <string name="msg_set_sound">声音提醒</string>
+    <string name="msg_set_vibrate">振动提醒</string>  
+    <string name="msg_set_no_disturbing">免打扰模式</string>
+    <string name="msg_set_period">%1$d点-%2$d点</string>
+    <string name="msg_set_period_title">免打扰时段</string>
+    <string name="msg_set_audio_play_mode">使用听筒播放语音</string>
+    <string name="setting_msg_set_on">已开启</string>
+    <string name="setting_msg_set_off">未开启</string>
+    <string name="download_downloading">下载中...</string>
+    <string name="download_cancel_confirm">文件下载未完成，确定要停止下载？</string>
+    <string name="download_error">下载错误</string>
+    <string name="download_success_install">下载成功，开始安装</string>
+    <string name="setting_gits_pric_tone">看私照和送礼音效</string>
+    <string name="setting_app_center">百宝箱</string>
+    <string name="setting_audio_mode_incall">使用听筒模式</string>
+    <string name="setting_audio_mode_music">使用扬声器模式</string>
+    <string name="setting_anti_harassment">防骚扰设置</string>
+    <string name="setting_anti_harassment_tip">太多妹子勾搭很烦恼？\n试试防骚扰设置，专心跟钟意的女神聊天</string>
+    <string name="setting_anti_harassment_closed">达到5级才能用，继续努力吧。</string>
+    <string name="setting_no_avatar_set">不接收没头像用户留言</string>
+    <string name="setting_lowlevel_set">不接收Lv1用户留言</string>
+    <string name="setting_success">设置成功</string>
+    <!-- setting -->
+    <!-- invite -->
+    <string name="invite_tip_line_1">邀请就可获得朋友收入10%的提成（3个月内）</string>
+    <string name="invite_tip_line_2">受邀的女性朋友也可获得10元现金奖励</string>
+    <string name="invite_wechat">微信</string>
+    <string name="invite_yixin">易信</string>
+    <string name="invite_weibo">微博</string>
+    <string name="invite_yuehui">同城约会</string>
+    <string name="invite_female">邀请女生</string>
+    <string name="invite_male">邀请男生</string>
+    <string name="invite_wechat_friend">邀请微信好友</string>
+    <string name="invite_wechat_circle">分享到微信朋友圈</string>
+    <string name="invite_yixin_friend">邀请易信好友</string>
+    <string name="invite_yixin_circle">分享到易信朋友圈</string>
+    <string name="invite_weibo_share">分享到新浪微博</string>
+    <string name="invite_title">邀请朋友</string>
+    <string name="weibo_auth_exeption">授权异常：</string>
+    <string name="weibo_auth_error">微博授权失败</string>
+    <string name="weibo_share_success">分享成功</string>
+    <string name="weibo_share_error">分享失败</string>
+    <!-- invite -->
+    
+    <string name="share_to_yixin">分享到易信</string>
+    <string name="share_to_wechat">分享到微信</string>
+    
+    <!-- splash -->
+    <string name="splash_channel_360">「360独家首发」</string>
+    <string name="splash_channel_nduo">「N多网独家首发」</string>
+    <string name="splash_channel_91">「91助手&#38;安卓市场联合首发」</string>
+    <string name="splash_channel_anzhi">「安智独家首发」</string>
+    <string name="splash_channel_wandoujia">「豌豆荚独家首发」</string>
+    <string name="splash_channel_qq">「应用宝官方独家发布」</string>
+    
+    <string name="avater_clip_size_too_small">"裁剪区域太小"</string>
+    <string name="app_copyright_netease">Copyright © 2014, NetEase, Inc. All Rights Reserved.</string>
+    
+    <!-- 阅后即焚 -->
+    <string name="open_fire">阅后即焚已开启</string>
+    <string name="open_fire_message">你发出的消息在对方查看后自动焚毁\n不留一丝痕迹哦</string>
+    <string name="receive_fire">你收到了「阅后即焚」消息</string>
+    <string name="receive_fire_message">这是一种看过就会销毁的消息，不要等消失了再追悔莫及</string>
+    <string name="close_fire">阅后即焚已关闭</string>
+    <string name="receive_screen_shot_message">注意：系统检测到%s对你的「阅后即焚」消息截屏</string>
+    <string name="I_know">我知道了</string>
+    <string name="play_fire_audio">播放语音</string>
+    <string name="play_fire_video">播放视频</string>
+    <string name="fire">焚毁</string>
+    <string name="fire_first">请点击焚毁按钮</string>
+    <string name="click_to_look">点击查看</string>
+    <string name="xian_pai_zhao_pian">现拍照片</string>
+    <string name="this_is_fire_message">这是阅后即焚消息</string>
+
+</resources>

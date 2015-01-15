@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_page_tag_girl">
+        <item>账户</item>
+        <item>聊天技</item>
+        <item>自我介绍</item>
+        <item>详细资料</item>
+        <item>魅力秘籍</item>
+        <item>邀请朋友，拿提成！</item>
+    </string-array>
+    
+     <string-array name="main_page_tag_man">
+        <item>自我介绍</item>
+        <item>详细资料</item>
+        <item>邀请朋友</item>
+    </string-array>
+    
+    <string-array name="main_page_detail_man">
+        <item>女神来了ID</item>
+        <item>生日</item>
+        <item>身高</item>
+        <item>收入</item>
+        <item>星座</item>
+        <item>所在地</item>
+        <item>喜欢的约会</item>
+        <item>兴趣爱好</item>
+        <item>我擅长的技能</item>
+    </string-array>
+    
+    <string-array name="main_page_detail_girl">
+        <item>女神来了ID</item>
+        <item>生日</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>身材</item>
+        <item>最满意的部位</item>
+        <item>星座</item>
+        <item>所在地</item>
+        <item>喜欢的约会</item>
+        <item>兴趣爱好</item>
+        <item>我想学的技能</item>
+    </string-array>
+    
+    <string-array name="main_page_detail_info_param">
+        <item>nick</item>
+        <item>birthday</item>
+        <item>weight</item>
+        <item>height</item>
+        <item>Constellation</item>
+        <item>satisfiedPart</item>
+        <item>bust</item>
+        <item>waist</item>
+        <item>hip</item>
+        <item>cup</item>
+        <item>favorDate</item>
+        <item>hobby</item>
+        <item>skill</item>
+        <item>socialUrl</item>
+        <item>province</item>
+        <item>city</item>
+        <item>district</item>
+        <item>income</item>
+    </string-array>
+    
+    <string-array name="audio_operation">
+        <item>播放</item>
+        <item>重录</item>
+        <item>删除</item>
+    </string-array>
+    
+    <string-array name="show_more_operation">
+        <item>举报</item>
+        <item>加黑</item>
+    </string-array>
+    
+    <string-array name="show_more_operation_other">
+        <item>举报</item>
+        <item>取消加黑</item>
+    </string-array>
+    
+    <string name="jubao">举报</string>
+    <string name="preview">预览</string>
+    <string name="pri_center">个人中心</string>
+    <string name="current_income">当前现金收入  %s元</string>
+    <string name="vip_service">VIP服务</string>
+    <string name="vip_service_unused">未开通</string>
+    <string name="charge">充值</string>
+    <string name="height">身高:</string>
+    <string name="weight">体重:</string>
+    <string name="figure">身材:</string>
+    <string name="city">城市:</string>
+    
+    <string name="tag_birthday">生日</string>
+    <string name="tag_height">身高</string>
+    <string name="tag_weight">体重</string>
+    <string name="tag_id">女神来了ID</string>
+    <string name="tag_location">所在地</string>
+    <string name="tag_figure">身材</string>
+    <string name="tag_income">收入</string>
+    <string name="favar_part">最满意的部位</string>
+    <string name="favar_part_a">最满意的部位:</string>
+    <string name="height_unit">%scm</string>
+    <string name="height_unit_big">%sCM</string>
+    <string name="weight_unit">%skg</string>
+    <string name="weight_unit_big">%sKG</string>
+    <string name="age_unit">%s岁</string>
+    <string name="income_unit">月收入:</string>
+    <string name="second_unit">%s秒</string>
+    <string name="coin_unit">%s金币</string>
+    <string name="txt_num_tip">%s/400</string>
+    <string name="str_nick">昵称</string>
+    <string name="nick_not_null">昵称不能为空</string>
+    <string name="modify_success">修改成功</string>
+    <string name="complain_commit">提交</string>
+    <string name="coin_balance">金币余额%s</string>
+    <string name="vip_end">%s前有效</string>
+    
+    <string name="colletation">星座</string>
+    <string name="sanwei">三围</string>
+    <string name="breast">胸围</string>
+    <string name="waist">腰围</string>
+    <string name="hip">臀围</string>
+    <string name="cup">罩杯</string>
+    <string name="hobby">兴趣爱好:</string>
+    <string name="income">收入:</string>
+    <string name="charm_index">魅力值  %s</string>
+    <string name="rich_index">豪气值  %s</string>
+    <string name="detail_info">详细资料</string>
+    <string name="charm_strategy">魅力秘籍</string>
+    <string name="invite">邀请朋友</string>
+    <string name="invite_user_female">邀请朋友，拿提成！</string>
+    <string name="charm_index_tab">魅力值</string>
+    
+    <string name="add_yixin">加为\"易信\"好友</string>
+    <string name="image_num">照片%s张</string>
+    <string name="private_image_num">私密照片%s张</string>
+    <string name="private_image">私密照片</string>
+    <string name="public_image">公开照片</string>
+    <string name="receive_gift_num">她收到%s件礼物</string>
+    <string name="send_gift_num">送出%s件礼物</string>
+    <string name="enke_num">她有%s位爱慕者</string>
+    <string name="enke_rank_ten">查看前10名</string>
+    
+    <string name="pri_user_data">个人资料</string>
+    <string name="user_data">资料</string>
+    <string name="say_sth_about_you">说点什么，让大家更了解你</string>
+    <string name="see_more_data">查看详细资料</string>
+    <string name="self_introduce">自我介绍</string>
+    <string name="favor_date">喜欢的约会</string>
+    <string name="interest_hobby">兴趣爱好</string>
+    <string name="adept_skill">我擅长的技能</string>
+    <string name="wanna_skill">我想学的技能</string>
+    <string name="sns">社交网络</string>
+    <string name="sns_text_length_limit">社交网络地址长度不能大于200</string>
+    <string name="vip_center">VIP中心</string>
+    <string name="my_level">我的等级</string>
+    <string name="gift_list">礼物清单</string>
+    <string name="chat">聊天</string>
+    <string name="send_gift">礼物</string>
+    <string name="vip_times">免费查看(%s次机会)</string>
+    
+    <string name="image_size_over">图片大小超过限制</string>
+    <string name="image_size_illegal">图片尺寸不符合要求</string>
+    <string name="image_coor_error">裁剪坐标错误</string>
+    
+    <string name="level_num">LV%s</string>
+    <string name="renqi_index">人气</string>
+    <string name="prise_image">赞照片</string>
+    <string name="rich_index_a">豪气值</string>
+    <string name="attestation">真人认证</string>
+    <string name="intimacy_index_a">亲密度</string>
+    <string name="see_more_private_pic">查看更多私密照片</string>
+    <string name="no_gift_tip">做第一个送她礼物的人，让她记住你！</string>
+    <string name="send_gift_tip">送她礼物，提升亲密度，征服女神</string>
+    <string name="to_send_crown">为她戴上皇冠，打造属于你的女神</string>
+    <string name="send_huanguan_tip">她的皇冠是%1$s，爱她就为她升级吧</string>
+    <string name="send_huanguan_most">为她换上你亲手送的%1$s皇冠吧！</string>
+    <string name="user_info_loading">用户信息加载中</string>
+    <string name="send_txt">发送</string>
+    <string name="send_right_now_txt">马上赠送</string>
+    <string name="send_to_unlock">送她礼物，解锁私照</string>
+    <string name="coin_num">%s金币</string>
+    <string name="praise_photo_tip">赞%1$s | 踩%2$s</string>
+    
+    <string name="upload_pic">上传照片</string>
+    <string name="modify_pic">修改头像</string>
+    <string name="camera_pic">拍摄</string>
+    <string name="album_pic">从相册选择</string>
+    <string name="del_pic_success">删除照片成功</string>
+    <string name="choose_del_pic">请选择要删除的照片</string>
+    <string name="delete_pic">删除这些照片？</string>
+    <string name="upload_pic_suc">照片上传成功</string>
+    <string name="pic">照片</string>
+    <string name="loading">正在加载中...</string>
+    <string name="pic_crop_error">照片裁剪错误</string>
+    
+    <string name="seconds_num">%s秒</string>
+    <string name="release_to_save">松手即保存</string>
+    <string name="touch_to_record">按住录制</string>
+    <string name="record">录制</string>
+    <string name="record_wel_audio">录制欢迎语音</string>
+    <string name="record_time_short">录音时间太短</string>
+    <string name="on_uploading">上传中</string>
+    <string name="audio_saved">录音已保存</string>
+    <string name="video_saved">视频已保存</string>
+    <string name="video_processing">视频处理中</string>
+    <string name="error_on_uploading">上传遇到问题</string>
+    <string name="re_upload">重新上传</string>
+    <string name="play_audio">播放</string>
+    <string name="record_audio">重录</string>
+    <string name="delete_audio">删除</string>
+    <string name="delete_audio_suc">删除语音成功</string>
+    <string name="delete_suc">删除成功</string>
+    <string name="record_sth">说几句嗲嗲的话,留下你的昵称\n遇见浪漫的真实</string>
+    
+    <string name="modify_info_suc">修改资料成功！</string>
+    <string name="add_yixin_friend">加为\"易信\"好友</string>
+    <string name="notify_yixin_tip">\"易信\"是我最爱的聊天工具，高清语音，免费贴图表情</string>
+    <string name="praise_pic_suc">赞私照成功！</string>
+    <string name="has_praised">你已赞过这张照片</string>
+    <string name="unlike_pic_suc">私照已踩</string>
+    <string name="has_unliked">已经踩过啦，么么哒。</string>
+    <string name="praise_it">赞一下</string>
+    <string name="coins_not_enough">亲，你的金币不够哦</string>
+    <string name="coins_not_enough_private_photo">亲，金币不足无法看私照哦</string>
+    
+    <string name="go_to_charge">去充值</string>
+    <string name="praised">已赞</string>
+    <string name="unliked">已踩</string>
+    
+    <string name="my_receive_gift">我的礼物</string>
+    <string name="my_gift_num">我的礼物（%s）</string>
+    <string name="edit_my_info">编辑我的资料</string>
+    
+    <string name="image_edit">编辑</string>
+    <string name="image_delete">删除</string>
+    <string name="album">相册</string>
+    <string name="pri_pic_album">私密相册</string>
+    
+    <string name="album_title">相册（%s）</string>
+    <string name="no_receive_gift_tip">还没收到礼物</string>
+    <string name="no_receive_gift_tip_2">其实土豪最爱有美丽私照的女神</string>
+    <string name="no_pub_pic_tip">你还没有公开照片</string>
+    <string name="no_pri_pic_tip">你还没有私照</string>
+    
+    <string name="level_info_table">等级成长对应表</string>
+    
+    <string name="more_operation">更多操作</string>
+    <string name="str_complain_type">举报类型</string>
+    <string name="complain_type_advertisement">商业广告</string>
+    <string name="complain_type_porn">淫秽图片</string>
+    <string name="complain_type_insult">文字语音不文明侮辱他人</string>
+    <string name="complain_type_sham">资料虚假</string>
+    <string name="complain_type_cheat">诈骗</string>
+    <string name="complain_type_political">不当政治言论</string>
+    <string name="complain_type_sextrade">性交易</string>
+    <string name="complain_type_complain">其它</string>
+    <string name="complain_hint">请选择举报的类型</string>
+    <string name="complain_hint2">请输入举报的原因（非必填）</string>
+    
+    <string name="block_success">加黑成功</string>
+    <string name="block_tip">加黑后，双方无法留言沟通</string>
+    <string name="block_confirm">确定加黑</string>
+    <string name="block_cancel_confirm">确定解除加黑？</string>
+    <string name="block_suc_girl">您已将她列入黑名单</string>
+    <string name="block_suc_man">您已将他列入黑名单</string>
+    <string name="cancel_block_suc">已取消加黑</string>
+    <string name="block_cannot_chat_tip_girl">您已将她列入黑名单无法与她留言</string>
+    <string name="block_cannot_chat_tip_man">您已将他列入黑名单无法与他留言</string>
+    <string name="block_cannot_send_gift">您已将她列入黑名单无法给她发送礼物</string>
+    
+    <string name="dongjie_cannot_chat_tip_girl">对方的账号已被系统冻结，无法与她聊天</string>
+    <string name="dongjie_cannot_chat_tip_man">对方的账号已被系统冻结，无法与他聊天</string>
+    
+    <string name="dongjie_cannot_get_userInfo">对方的账号已被系统冻结，无法获取该用户信息</string>
+    
+    <string name="network_traffic_gprs_tips">友情提醒：你正在使用非WIFI网络播放视频</string>
+    
+    <string name="charm_tip">每件礼物都能提升你的魅力值</string>
+    <string name="how_to_get_gift">怎样能收到更多礼物？</string>
+    
+    <string name="upload_pri_pic">传私照</string>
+    <string name="let_send_yaoshi">让他送你钥匙</string>
+    <string name="upload_pri_pic_a">上传私密照片</string>
+    <string name="upload_private_photo">上传私照</string>
+    
+    <string name="chat_sajiao">聊天撒娇</string>
+    <string name="let_dai_huangguan">让他帮你戴皇冠</string>
+    <string name="find_to_chat">找人聊天</string>
+    
+    <string name="record_audio_int">录自我展示</string>
+    <string name="let_shenhuan">让他神魂颠倒</string>
+    <string name="record_audio_int_a">录自我展示</string>
+    <string name="record_audio_again">重新录制</string>
+    
+    <string name="peng_yuanfen">碰缘分</string>
+    <string name="let_dashan">邂逅真的土豪</string>
+    <string name="open_peng_yuanfen">开启碰缘分</string>
+    <string name="peng_yuanfen_already_opend">碰缘分已开启</string>
+    
+    <string name="account_money_current_income">当前现金收入(元)</string>
+    <string name="account_money_cash_history">历史记录</string>
+    <string name="account_money_accumulate_charm">累计魅力值</string>
+    <string name="account_money_accumulate_cash">累计现金收入（元）</string>
+    <string name="account_money_ne_balance">查看网易宝余额</string>
+    <string name="account_money_cash_apply">申请提现</string>
+    <string name="account_money_accept_license">我同意【女神来了】兑现使用条款</string>
+    <string name="account_money_check_license">[查看条款]</string>
+    <string name="account_money_tips">tips</string>
+    <string name="account_money_tips1">现金收入的有效期为3个月，有新收入时，自动延长有效期。</string>
+    <string name="account_money_tips2">您可以在每个月的6日-25日之间进行提现申请，申请后工作人员会审核信息，核实无误后下个自然月5日发放到您的网易宝帐号。</string>
+    <string name="account_money_withdraw_success">提现申请已受理，请留意小爱助手通知</string>
+    <string name="account_money_data_error">数据更新失败</string>
+    <string name="account_money_level_low_error">达到LV3就能申请提现，快去施展魅力收获更多礼物吧！</string>
+    <string name="account_money_miss_date_error">请在每月6日到25日之间提交申请</string>
+    <string name="account_money_no_income_error">你还没有现金收入呢</string>
+    <string name="account_money_tip_withdrawing">正在申请提现</string>
+    <string name="account_money_withdrawing">申请提现中</string>
+    <string name="account_money_expire_date">有效期：</string>
+    <string name="account_money_auth_tip">为保证收入准确入账，请补充你本人的身份信息</string>
+    <string name="account_money_auth_tip_bottom">以上信息仅用于提现资格审核，网易保证不会以任何方式滥用或泄露你提交的个人信息。</string>
+    <string name="account_money_auth_identity">身份证号</string>
+    <string name="account_money_auth_front_picture">上传身份证（正面）</string>
+    <string name="account_money_auth_contrary_picture">上传身份证（背面）</string>
+    <string name="account_money_auth_video_picture">上传验证视频</string>
+    <string name="account_money_auth_video_tips">用白纸展示“女神来了”字样，并说出自己的会员名称，视频不超过10秒</string>
+    <string name="account_money_auth_upload_title">上传身份证照</string>
+    <string name="account_money_auth_fragment_title">身份信息验证</string>
+    <string name="account_money_auth_info_no_full">身份信息未填写完整</string>
+    <string name="account_money_auth_exist">信息验证尚未完成，确定要离开？</string>
+    <string name="account_money_auth_exist_msg">身份资料不完整，申请失败</string>
+    <string name="account_money_history_tab_all">全部</string>
+    <string name="account_money_history_tab_income">收入</string>
+    <string name="account_money_history_tab_cash">提现</string>
+    <string name="account_money_history_tab_deduct">扣除</string>
+    <string name="account_money_history_list_head_all">共%1$d笔记录</string>
+    <string name="account_money_history_list_head_income">共%1$d笔收入记录</string>
+    <string name="account_money_history_list_head_cash">共%1$d笔提现记录</string>
+    
+    <string name="yixin_tip_account_is_occupy">无法加易信好友，你手机对应的易信号已被使用</string>
+    <string name="yixin_tip_alread_friend">你们已经是易信好友了</string>
+    <string name="yixin_add_friend_apply_has_send">您的好友申请已经发送</string>
+    <string name="yixin_add_friend_has_not_install">您尚未安装易信</string>
+    <string name="yixin_download_yixin">下载易信，即可开始聊天。</string>
+    <string name="yixin_install">立即安装</string>
+    <string name="yixin_start_chat">对方同意后，即可开始在易信聊天</string>
+    <string name="yixin_set_password">设置易信登录密码</string>
+    <string name="yixin_free_chat">你将启用易信跟她聊天，完全免费。</string>
+    <string name="yixin_account_is">易信帐号：</string>
+    <string name="yixin_input_hint_password">设置密码6-16个字符</string> 
+    <string name="yixin_register_err">网络繁忙，请稍后再试</string>
+    <string name="yixin_register">立即注册</string>
+    <string name="yixin_no_install">未安装易信</string>
+    <string name="yixin_register_success">注册成功！</string>
+    <string name="yixin_goto_yixin">去易信查看</string>
+    <string name="yixin_check_mobile">验证手机</string>
+    <string name="yixin_check_next">下一步</string>
+    
+    <string name="you_have_no_more_special_gift">你的%1$s送完啦，试试这个礼物吧！</string>
+    <string name="you_have_no_gift">%1$s已经下架了，试试这个礼物吧! </string>
+    <string name="single_gift_explore_common_tip">送她%1$s礼物，马上增加她和你%2$s亲密度哟！</string>
+    <string name="single_gift_explore_crown_tip">她在期待新皇冠，亲手为她换上吧！</string>
+    
+    <string name="edit_photo_public_tips">须本人照片，请不要传过多暴露的照片（不超过照片张数的30%）</string>
+    <string name="edit_photo_private_tips">须本人照片，请不要传过多暴露的照片（不超过照片张数的60%）</string>
+    <string name="record_my_show">录制个人展示</string>
+    <string name="record_tab_video">使用视频</string>
+    <string name="record_tab_audio">使用语音</string>
+    <string name="record_video_tips">视频秀出自己，报出你的昵称</string>
+    <string name="video_voice_upload_faild">上传失败:</string>
+    <string name="video_voice_reupload">重新上传</string>
+    <string name="video_voice_add_video">添加视频</string>
+    <string name="video_voice_using_video">正在使用视频展示</string>
+    <string name="video_voice_using_voice">正在使用语音展示</string>
+    
+    
+</resources>

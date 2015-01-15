@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="8dip"
+        android:orientation="vertical">
+        
+        <TextView 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="left|center_vertical"
+	    	android:padding="5dip"
+	    	android:text="@string/who_invite_me_tip"  
+	    	android:textColor="@color/black"
+			android:textSize="@dimen/text_size_12"  
+			android:drawableLeft="@drawable/icon_tips_circle_purple"
+			android:drawablePadding="4dip"
+			android:background="@drawable/bg_pgcenter_purple_tip_bar"
+	    />
+        
+        <EditText
+        	android:id="@+id/invite_code_edit"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="60dip"
+        	android:paddingBottom="12dip"
+        	android:focusable="true"
+        	android:gravity="center_vertical|left"
+        	android:textColor="@color/black"
+        	android:textSize="@dimen/info_txt_size_17"   
+        	android:singleLine="true"
+        	android:inputType="number"
+       		android:background="@drawable/input_bg"
+        	android:hint="@string/type_the_invite_code"/>
+
+    </LinearLayout>
+
+	<TextView
+	    android:id="@+id/invite_code_query"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="40dip"
+	    android:layout_gravity="center"
+	    android:textColor="@color/white"
+	    android:textSize="17sp"
+	    android:background="@drawable/btn_who_invite_me_query_selector"
+	    android:gravity="center"
+	    android:text="@string/query"/>
+    
+</LinearLayout>

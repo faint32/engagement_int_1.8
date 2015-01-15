@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:paddingLeft="@dimen/layout_padding"
+		android:paddingRight="@dimen/layout_padding"
+		android:paddingBottom="28dp"
+		android:paddingTop="8dip">
+	    <TextView 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:padding="5dip"
+	    	android:text="@string/account_money_auth_tip"  
+	    	android:textColor="@color/black"
+			android:textSize="@dimen/text_size_11"  
+			android:drawableLeft="@drawable/icon_tips_circle_purple"
+			android:background="@drawable/bg_pgcenter_purple_tip_bar"
+	    />
+	    <EditText 
+	        android:id="@+id/auth_input_name"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="20dip"
+	    	android:hint="@string/name"
+	    	android:singleLine="true"
+	    	android:imeOptions="actionNext"
+	    	android:textColorHint="@color/content_text"
+	    	android:textColor="@color/black"
+			android:textSize="@dimen/text_size_17"
+			android:background="@drawable/input_bg"
+	    />
+	    <EditText 
+	        android:id="@+id/auth_input_number"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="15dip"
+	    	android:hint="@string/account_money_auth_identity"
+	    	android:singleLine="true"
+	    	android:imeOptions="actionDone"
+	    	android:textColorHint="@color/content_text"
+	    	android:textColor="@color/black"
+			android:textSize="@dimen/text_size_17"
+			android:background="@drawable/input_bg"
+	    />
+	    
+	    <!-- 身份证正面 -->
+	    <RelativeLayout android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="28dp">
+	        
+	        <Button android:id="@+id/auth_front_text"
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="match_parent"
+		    	android:layout_toLeftOf="@+id/auth_front_picture_iv"
+		    	android:layout_marginRight="10dp"
+	            android:textSize="18sp"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            android:text="@string/account_money_auth_front_picture"
+	            android:textColor="@drawable/btn_purple_textcolor_selector"
+	            android:background="@drawable/btn_purple_text_selector"/>
+	        
+	        <TextView android:text="@string/preview"
+	            android:layout_width="96dp"
+		    	android:layout_height="64dp"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/content_text"
+	            android:background="@drawable/bg_identity_preview"/>
+	        
+	        <ImageView 
+	            android:id="@+id/auth_front_picture_iv"
+		        android:layout_width="96dp"
+		    	android:layout_height="64dp"
+		    	android:layout_alignParentRight="true"
+		    	android:scaleType="fitXY" />
+	        
+	    </RelativeLayout>
+	    
+	    <!-- 身份证背面 -->
+	    <RelativeLayout 
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="28dp">
+	        
+	        <Button android:id="@+id/auth_contrary_text"
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="match_parent"
+		    	android:layout_toLeftOf="@+id/auth_contrary_picture_iv"
+		    	android:layout_marginRight="10dp"
+		    	android:layout_centerVertical="true"
+	            android:textSize="18sp"
+	            android:gravity="center"
+	            android:text="@string/account_money_auth_contrary_picture"
+	            android:textColor="@drawable/btn_purple_textcolor_selector"
+	            android:background="@drawable/btn_purple_text_selector"/>
+	        
+	        <TextView android:text="@string/preview"
+	            android:layout_width="96dp"
+		    	android:layout_height="64dp"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/content_text"
+	            android:background="@drawable/bg_identity_preview"/>
+	        
+	        <ImageView 
+	            android:id="@+id/auth_contrary_picture_iv"
+		        android:layout_width="96dp"
+		    	android:layout_height="64dp"
+		    	android:layout_alignParentRight="true"
+		    	android:scaleType="fitXY" />
+	        
+	    </RelativeLayout>
+	    
+	    <!-- 拍摄视频 -->
+	    <RelativeLayout 
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="28dp">
+	        
+	        <Button android:id="@+id/auth_video_text"
+		    	android:layout_height="wrap_content"
+		    	android:layout_centerVertical="true"
+		    	android:layout_width="match_parent"
+		    	android:layout_toLeftOf="@+id/auth_video_picture_iv"
+		    	android:layout_marginRight="10dp"
+	            android:textSize="18sp"
+	            android:gravity="center"
+	            android:text="@string/account_money_auth_video_picture"
+	            android:textColor="@drawable/btn_purple_textcolor_selector"
+	            android:background="@drawable/btn_purple_text_selector"/>
+	        
+	        <TextView android:text="@string/preview"
+	            android:layout_width="96dp"
+		    	android:layout_height="64dp"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/content_text"
+	            android:background="@drawable/bg_identity_preview"/>
+	        
+	        <ImageView 
+	            android:id="@+id/auth_video_picture_iv"
+		        android:layout_width="96dp"
+		    	android:layout_height="64dp"
+		    	android:layout_alignParentRight="true"
+		    	android:scaleType="fitXY" />
+	        
+	    </RelativeLayout>
+	    
+	    <!-- 视频 -->
+	    <LinearLayout 
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@drawable/bg_identity_video">
+	        
+	        <TextView android:id="@+id/sample_desc_text"
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+	            android:textSize="@dimen/text_size_14"
+	            android:text="@string/account_money_auth_video_tips"
+	            android:paddingLeft="12dp"
+	            android:paddingTop="20dp"
+	            android:paddingRight="12dp"
+	            android:paddingBottom="16dp"/>
+	        
+	        <ImageView android:id="@+id/sample_desc_img"
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:adjustViewBounds="true"
+		    	android:scaleType="fitXY" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center_vertical"
+	    	android:layout_marginTop="15dip"
+	    	android:layout_marginBottom="5dip">
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:src="@drawable/icon_tips_circle_gray"
+		    />
+		    <ImageView 
+		        android:layout_width="match_parent"
+		    	android:layout_height="1px"
+		    	android:background="@color/list_divider_line_color"
+		    />
+		</LinearLayout>
+	    <TextView 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/account_money_auth_tip_bottom"    
+	    	android:textColor="@color/content_text"
+			android:textSize="@dimen/text_size_14"
+	    />
+	</LinearLayout>
+
+</ScrollView>

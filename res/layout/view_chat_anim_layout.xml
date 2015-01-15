@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netease.engagement.widget.ChatAnimView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	
+	    <TextView
+	        android:id="@+id/man_gift_tip_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/info_margin_4dp"
+	        android:paddingTop="13dip"
+	        android:paddingLeft="3dip"
+	        android:paddingRight="3dip"
+	        android:background="@drawable/message_tips"
+	        android:textColor="@color/white"
+	        android:textSize="14sp"
+	        android:gravity="center_horizontal"
+	        android:text="@string/man_send_gift_show_up_tip"
+	        android:visibility="invisible"/>
+    
+	    <TextView
+	        android:layout_width="@dimen/info_margin_12dp"
+	    	android:layout_height="@dimen/info_margin_4dp"
+	    	android:visibility="invisible" />
+    
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/info_margin_22dp"
+        android:layout_marginLeft="@dimen/info_margin_12dp"
+        android:layout_marginStart="@dimen/info_margin_12dp"
+        android:orientation="horizontal" >
+        
+	    <LinearLayout
+	        android:id="@+id/image_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentStart="true"
+	        android:gravity="center"
+	        android:layout_marginLeft="116dip"
+	        android:layout_marginStart="116dip"
+	        android:paddingTop="@dimen/info_margin_40dp"
+	        android:paddingBottom="@dimen/info_margin_8dp"
+	        android:paddingLeft="@dimen/info_margin_20dp"
+	        android:paddingStart="@dimen/info_margin_20dp"
+	        android:paddingRight="@dimen/info_margin_6dp"
+	        android:paddingEnd="@dimen/info_margin_6dp"
+	        android:visibility="invisible" >
+	        
+	        <ImageView
+	            android:id="@+id/image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/icon_chat_image_selector"
+	            android:contentDescription="@string/pic" />
+	        
+	    </LinearLayout>
+
+      	<FrameLayout
+			android:layout_toRightOf="@id/image_layout"
+			android:layout_toEndOf="@id/image_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="@dimen/info_margin_40dp"
+	        android:paddingBottom="@dimen/info_margin_8dp"
+	        android:paddingLeft="@dimen/info_margin_6dp"
+	        android:paddingStart="@dimen/info_margin_6dp"
+	        android:paddingRight="@dimen/info_margin_8dp"
+	        android:paddingEnd="@dimen/info_margin_8dp"
+	        android:visibility="invisible" >
+	        
+	        <ImageView
+	            android:id="@+id/video"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:background="@drawable/icon_chat_video_selector"
+	            android:contentDescription="@string/pic"
+	            />
+	        
+	        <ImageView
+	            android:id="@+id/man_gift_tip_halo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:background="@drawable/message_tips_icon"
+	            android:contentDescription="@string/pic"
+	            />
+	        
+	    </FrameLayout>
+
+    </RelativeLayout>
+</com.netease.engagement.widget.ChatAnimView>

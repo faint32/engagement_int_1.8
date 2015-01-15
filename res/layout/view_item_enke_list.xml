@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/info_enke_item_height"
+    android:paddingTop="@dimen/info_margin_12dp"
+    android:paddingBottom="@dimen/info_margin_12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/enke_rank"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_16dp"
+        android:textColor="@color/info_level_txt_color"
+        android:textSize="@dimen/info_enke_item_txt_size"
+        android:gravity="center" />
+    <com.netease.engagement.view.HeadView
+        android:id="@+id/enke_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_16dp" >
+    </com.netease.engagement.view.HeadView>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_12dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/enke_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/info_audio_txt_color"
+            android:textSize="@dimen/info_txt_size_17" />
+
+        <TextView
+            android:id="@+id/enke_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/info_tag_txt_color"
+            android:textSize="@dimen/info_level_txt_size" />
+    </LinearLayout>
+
+</LinearLayout>

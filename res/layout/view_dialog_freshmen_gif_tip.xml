@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/reg_tip_dialog_bg_color">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dip"
+        android:src="@drawable/icon_pglogin_window_ai_1"
+    />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rec_tip_freshman_gif1"
+        android:layout_marginTop="15dip"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/black"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+    />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/rec_tip_freshman_gif2"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+    />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_1"
+        android:layout_marginTop="20dip"
+        android:background="@color/dialog_button_divider"
+    />
+    <TextView 
+        android:id="@+id/freshman_gif_ok"
+        android:text="@string/confirm"
+        style="@style/dialog_btn_style"
+    />
+</LinearLayout>

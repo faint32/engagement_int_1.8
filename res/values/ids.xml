@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <!-- 主界面 -->
+    <item name="activity_home_container_id" type="id"/>  
+    
+    <!-- 欢迎界面 -->
+    <item name="activity_welcome_container_id" type="id" />
+    
+    <!-- 登录注册界面 -->
+    <item name="activity_account_entrance_container_id" type="id"/>
+    <item name="activity_register_container_id" type="id"/>
+    <item name="activity_login_container_id" type="id"/>
+    
+    <!-- 碰缘分界面 -->
+    <item name="activity_yuanfen_container_id" type="id"/>
+    <!-- 聊天技界面 -->
+    <item name="activity_chatskill_container_id" type="id"/>
+    <!-- 位置选择界面 -->
+    <item name="activity_select_position_container_id" type="id"/>
+    <!-- 上传图片界面 -->
+    <item name="activity_upload_picture_container_id" type="id"/>
+    <item name="activity_picture_explorer_container_id" type="id"/>
+    <!-- 搜索界面 -->
+    <item name="activity_search_container_id" type="id"/>
+    <item name="activity_search_list_container_id" type="id"/>
+    <!-- 女性账户界面 -->
+    <item name="activity_money_account_container_id" type="id"/>
+    <!-- Web界面 -->
+    <item name="activity_web_container_id" type="id"/>
+    <!-- 阅后即焚界面 -->
+    <item name="activity_fire_container_id" type="id"/>
+    
+    <item name="activity_image_browser_id" type="id"/>
+    <item name="activity_private_session_id" type="id"/>
+    <item name="activity_pageinfo_container_id" type="id"/>
+    <item name="activity_audiorec_container_id" type="id"/>
+    <item name="activity_level_container_id" type="id"/>
+    <item name="activity_choice_list_container_id" type="id"/>
+    <item name="activity_user_page_container_id" type="id"/>
+    <item name="activity_private_image_container_id" type="id"/>
+    <item name="activity_image_list_container_id" type="id"/>
+    <item name="activity_chat_image_container_id" type="id"/>
+    <item name="activity_chat_video_list_container_id" type="id"/>
+    <item name="activity_chat_video_rec_container_id" type="id"></item>
+    <item name="activity_complain_container_id" type="id"/>
+    <item name="activity_action_container_id" type="id"/>
+    <item name="activity_chat_pri_piclist_container_id" type="id"/>
+    <item name="button_image_post" type="id"/>
+    <item name="viewpager_image_browse" type="id"/>
+    
+    
+    <item name="activity_CellPhone_container_id" type="id"/>
+    <item name="activity_ExternalLogin_container_id" type="id"/>
+    <item name="activity_setting_container_id" type="id"/><!-- 设置界面 -->
+    <item name="activity_download_container_id" type="id"/><!-- 下载进度页面 -->
+    <item name="activity_invite_container_id" type="id"/><!-- 邀请页面 -->
+    <item name="activity_external_login_container_id" type="id"/><!-- 外部登录网页页面 -->
+    <!-- 录音Dialog -->
+    <item name="dialog_double_click_record_id" type="id"/>
+    <!-- PopupWindow 背景层 -->
+    <item name="popupwindow_bg_layout_id" type="id"/>
+    
+	<!--    照片上传统一入口   -->
+    <item name="pic_uploat_layout_id" type="id"></item>
+
+</resources>

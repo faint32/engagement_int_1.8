@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/video_edit_seekbar_thumb_height" >
+
+    <!-- 自定义seekbar样式，对不准，布局一个view，代码中来控制 -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_edit_seekbar_progress_height"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/video_seekbar_progress"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/video_progress" >
+        </View>
+
+        <View
+            android:id="@+id/video_seekbar_background"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/video_background" >
+        </View>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/video_edit_end_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="1000"
+        android:paddingBottom="0dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="12dp"
+        android:paddingTop="0dip"
+        android:progress="1000"
+        android:progressDrawable="@color/trans"
+        android:thumb="@drawable/video_ic_video_edit_end_thumb_selector" />
+    
+     <ImageView
+      android:id="@+id/minimum_clip_length_image"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/video_edit_seekbar_progress_height"
+      android:src="@color/white"
+      android:layout_centerVertical="true" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip">
+	<com.netease.engagement.view.HeadView
+	    android:id="@+id/recommend_male_profile"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center_vertical"
+    	android:layout_marginRight="@dimen/layout_padding"
+	/>
+	<LinearLayout
+		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"  
+    	android:orientation="vertical">
+    	<TextView 
+			android:id="@+id/recommend_male_nickname"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:layout_alignParentLeft="true"
+    		android:textColor="@color/text_dark_color"
+    		android:textSize="@dimen/text_size_17"
+		/>
+		<!-- 年龄和豪气值 -->
+		<TextView 
+			android:id="@+id/recommend_male_age"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/rec_item_detail_text"
+    		android:textSize="@dimen/text_size_12"
+		/>
+		<!-- 等级 -->
+		<TextView 
+			android:id="@+id/recommend_male_level"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/white"
+    		android:textSize="@dimen/text_size_12"
+    		android:paddingLeft="6dip"
+    		android:paddingRight="6dip"
+    		android:background="@drawable/bg_pgrecommendlist_level_bar"
+    		android:includeFontPadding="false"
+    		android:gravity="center"
+    		android:layout_marginTop="3dip"
+		/>
+	</LinearLayout>
+</LinearLayout>

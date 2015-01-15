@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    <SurfaceView
+        android:id="@+id/recview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        >
+    </SurfaceView>
+    
+    <TextView
+        android:id="@+id/switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/icon_pgchat_video_len_mode"
+        android:layout_marginTop="@dimen/info_margin_28dp"
+        android:layout_marginLeft="@dimen/info_margin_16dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="@dimen/chat_video_rec_time_width"
+        android:layout_height="@dimen/info_margin_28dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/info_margin_20dp"
+        android:layout_marginRight="@dimen/info_margin_16dp"
+        android:background="@drawable/bg_pgchat_video_record_time_bar"
+        android:orientation="horizontal"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_pgchat_video_record_red_dot"
+            />
+        <com.netease.engagement.view.TimerView 
+            android:id="@+id/timer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_4dp"
+            android:textSize="@dimen/chat_audio_record_tip_gesture_size"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/start_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/info_margin_48dp"
+        android:background="@drawable/btn_pgchat_video_record"
+        />
+    
+    <RelativeLayout android:id="@+id/start_play_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="invisible">
+        
+        <Button android:id="@+id/start_play"
+            android:background="@drawable/btn_identity_videorecord_play_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        
+        <Button android:id="@+id/re_record"
+            android:text="重拍"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="68dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/chat_audio_record_tip_gesture_size"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_identity_white_hollow_selector"/>
+        
+        <Button android:id="@+id/use_video"
+            android:text="使用视频"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/chat_audio_record_tip_gesture_size"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_identity_white_hollow_selector"/>
+        
+    </RelativeLayout>
+    
+    
+    <ImageView 
+        android:id="@+id/end_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/info_margin_48dp"
+        android:background="@drawable/btn_pgchat_video_record_stop"
+        />
+</RelativeLayout>

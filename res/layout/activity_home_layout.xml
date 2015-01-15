@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主页Activity界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 导航栏 -->
+    <com.netease.engagement.view.HomeTabNavigationBar
+        android:id="@+id/home_tab_bar"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    />
+    <RelativeLayout
+        android:id="@+id/home_tab_bar_cover"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/home_tab_bar"
+        android:layout_alignTop="@id/home_tab_bar"
+        android:layout_alignRight="@id/home_tab_bar"
+        android:layout_alignBottom="@id/home_tab_bar"
+        android:background="#9a000000"
+        android:visibility="gone" />
+    
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_above="@id/home_tab_bar">
+        <!-- ViewPager -->
+	    <com.netease.engagement.view.CustomViewPager
+	        android:id="@+id/home_content_page"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    />
+	    <ImageView 
+	        android:id="@+id/home_layout_shade"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:background="@color/rec_shortcut_black_shade"
+	    	android:visibility="gone"
+	    />
+    </FrameLayout>
+    
+    <!-- 快捷工具面板 -->
+    <com.netease.engagement.view.OneByOneMenuBar 
+        android:id="@+id/home_shortcur_panel"
+        android:layout_width="match_parent"
+    	android:layout_height="128dip"
+    	android:layout_above="@id/home_tab_bar"
+    	android:gravity="center_vertical"
+    	android:background="@color/home_shortcur_pannel_bg">
+        <TextView 
+            android:id="@+id/home_shortcur_photo"
+       		android:layout_width="0dip"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:gravity="center"
+   			android:text="@string/rec_shortcut_photo"
+   			android:textColor="@drawable/color_home_shortcut_text_selector"
+   			android:textSize="11sp"
+   			android:drawableTop="@drawable/btn_home_shortcut_picture_bg_selector"
+   			android:visibility="invisible"
+   		/>
+        <TextView 
+            android:id="@+id/home_shortcur_yuanfen"
+       		android:layout_width="0dip"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:gravity="center"
+   			android:text="@string/rec_shortcut_yuanfen"
+   			android:textColor="@drawable/color_home_shortcut_text_selector"
+   			android:textSize="11sp"
+   			android:drawableTop="@drawable/btn_home_shortcut_yuanfen_bg_selector"
+   			android:visibility="invisible"
+   		/>
+        <TextView 
+            android:id="@+id/home_shortcur_talk"
+       		android:layout_width="0dip"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:gravity="center"
+   			android:text="@string/rec_shortcut_talk"
+   			android:textColor="@drawable/color_home_shortcut_text_selector"
+   			android:textSize="11sp"
+   			android:drawableTop="@drawable/btn_home_shortcut_talk_bg_selector"
+   			android:visibility="invisible"
+   		/>
+        <TextView 
+            android:id="@+id/home_shortcur_cash"
+       		android:layout_width="0dip"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:gravity="center"
+   			android:text="@string/rec_shortcut_cash"
+   			android:textColor="@drawable/color_home_shortcut_text_selector"
+   			android:textSize="11sp"
+   			android:drawableTop="@drawable/btn_home_shortcut_cash_bg_selector"
+   			android:visibility="invisible"
+   		/>
+    </com.netease.engagement.view.OneByOneMenuBar>
+    
+    
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone" />
+    
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RadioGroup
+        android:id="@+id/history_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/history_tab_all"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:text="@string/account_money_history_tab_all"
+        />
+        <RadioButton
+            android:id="@+id/history_tab_income"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:text="@string/account_money_history_tab_income"
+        />
+        <RadioButton
+            android:id="@+id/history_tab_cash"
+            style="@style/radiobutton_chat_list_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:text="@string/account_money_history_tab_cash"
+        />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/history_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/history_tab" 
+    />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+	<include
+     android:id="@+id/setting_no_avatar"
+     layout="@layout/setting_item_view_with_switcher" />
+	<include
+     android:id="@+id/setting_low_level"
+     layout="@layout/setting_item_view_with_switcher" />
+
+  	<TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/content_text"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/setting_anti_harassment_tip"
+            android:textSize="@dimen/text_size_14" 
+            android:layout_marginBottom="28dp"/>
+</LinearLayout>

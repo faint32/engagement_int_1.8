@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑定手机号界面布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/account_rec_list"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_account_recommend_footer_height"
+        android:layout_alignParentBottom="true">
+		 
+		<com.netease.engagement.view.UserScrollView
+           	android:id="@+id/blur_background"
+	    	android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:scrollbars="none">  
+	   		
+	   		<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/bg_blur"/>
+	   		
+        
+		</com.netease.engagement.view.UserScrollView>
+        
+        
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/reg_account_recommend_footer_height"
+		    android:paddingTop="20dip"
+		    android:gravity="center_horizontal">
+		    <LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+			    <TextView 
+			        android:id="@+id/entrance_register"
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_gravity="center_vertical"
+			    	android:layout_marginRight="16dip"
+			    	android:gravity="center"
+			    	android:background="@drawable/btn_account_entrance_selector"
+			    	android:text="@string/reg_btn_register_free"
+			    	android:textColor="@color/white"
+			    	android:textSize="17sp"
+			    />
+	
+			    <TextView 
+			        android:id="@+id/entrance_login"
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_gravity="center_vertical"
+			    	android:gravity="center"
+			    	android:background="@drawable/btn_account_entrance_selector"
+			    	android:text="@string/login"
+			    	android:textColor="@color/white"
+			    	android:textSize="17sp"
+			    />
+
+			</LinearLayout>
+	    </LinearLayout> 
+        
+    </FrameLayout>
+    
+</RelativeLayout>

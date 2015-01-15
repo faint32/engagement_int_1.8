@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="4dip"
+    android:paddingRight="4dip">
+    <TextView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/info_margin_8dp"
+        android:layout_weight="0"
+        android:background="@drawable/titlebar_a_selector"
+        android:drawableLeft="@drawable/bar_btn_back_a"
+        android:drawablePadding="-2dip"
+        android:textColor="@color/purple_dark"
+        android:textSize="16sp"
+        android:text="@string/back"
+        android:gravity="left|center_vertical"
+        android:layout_marginRight="5dip"/>
+    
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"
+    />
+    <TextView
+        android:id="@+id/title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/info_margin_4dp"
+        android:layout_weight="0"
+        android:background="@drawable/titlebar_a_selector"
+        android:textColor="@color/purple_dark"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dip"
+        android:gravity="center"
+    />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:layout_marginTop="0dip" 
+    android:id="@+id/video_edit_horizontallistview">
+
+    <View
+        android:layout_width="8dip"
+        android:layout_height="50dip"
+        android:layout_centerVertical="true"
+        android:background="@color/search_item_hover" 
+        android:visibility="gone">
+    </View>
+
+    <com.netease.android.widget.ui.HorizontalListView
+        android:id="@+id/video_horizontallistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dip" 
+        android:layout_marginRight="0dip"/>
+    
+        <View
+        android:layout_width="@dimen/video_edit_hlist_right_margin"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/black" >
+    </View>
+
+    <!-- 小于8s，并且不是整数秒，用来遮挡多余的部分 -->
+
+    <View
+        android:id="@+id/video_listview_black_mask"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/video_edit_hlist_right_margin"
+        android:background="@color/black" >
+    </View>
+
+    <!-- 半透明黑色，盖住选图 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="@dimen/video_edit_hlist_right_margin"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/video_progress_begin"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="invisible" >
+        </View>
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </View>
+
+        <View
+            android:id="@+id/video_progress_end"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+        </View>
+
+        <!-- 半透明遮挡条，随seekbar联动 -->
+
+        <View
+            android:id="@+id/video_listview_mask"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/search_popup_bg" >
+        </View>
+    </LinearLayout>
+
+</RelativeLayout>

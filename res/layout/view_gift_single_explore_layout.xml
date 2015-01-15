@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/info_send_gift_pager_back">
+	
+   	<LinearLayout
+        android:id="@+id/margin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/info_send_gift_pager_back">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pggift_curtain" />
+    </LinearLayout>
+    
+	<RelativeLayout
+	    android:layout_below="@id/margin_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="28dip"
+	    android:paddingLeft="30dip"
+	    android:paddingRight="44dip"
+	    android:paddingBottom="28dip">
+        
+	    <LinearLayout
+	        android:id="@+id/gift_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal">
+	        
+	        <ImageView
+	         	android:id="@+id/gift_image"
+	         	android:layout_width="wrap_content"
+	         	android:layout_height="wrap_content"
+	         	android:layout_gravity="center_horizontal"/>
+	        
+	        <TextView
+         		android:id="@+id/gift_name"
+         		android:layout_width="wrap_content"
+         		android:layout_height="wrap_content"
+         		android:layout_gravity="center_horizontal"
+         		android:layout_marginTop="4dip"
+         		android:gravity="center"
+         		android:textColor="@color/info_audio_txt_color"
+         		android:textSize="@dimen/info_gift_name_txt_size"/>
+	        
+	        <TextView
+         		android:id="@+id/gift_price"
+         		android:layout_width="wrap_content"
+         		android:layout_height="wrap_content"
+         		android:gravity="center"
+         		android:layout_marginTop="4dip"
+         		android:layout_gravity="center_horizontal"
+         		android:background="@drawable/bg_pggift_price_bar"
+         		android:textColor="@color/white"
+         		android:textSize="12sp"/>
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/gift_layout"
+	        android:orientation="vertical"
+	        android:paddingTop="18dip"
+	        android:layout_marginLeft="20dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_horizontal">
+	        
+	        <TextView
+	            android:id="@+id/gift_tip"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:textSize="13sp"
+	            android:gravity="left"
+	            android:text="送她毛绒狗狗礼物，马上增加她和你500亲密度哟！"
+	            android:textColor="@color/info_audio_txt_color"/>
+	        
+	        <TextView
+	            android:id="@+id/send_gift"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="28dip"
+	            android:layout_gravity="right"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+	            android:textSize="16sp"
+	            android:text="@string/send_right_now_txt"
+	            android:background="@drawable/btn_gif_explore_send_selector"/>
+	        
+		</LinearLayout>
+	</RelativeLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ******************************************
+     *                     常用颜色
+     -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="red">#ff0000</color><!--红色 -->
+    <color name="white">#ffffff</color><!--白色 -->
+    <color name="blue">#0379b8</color><!--蓝色 -->
+    <color name="purple">#9932CD</color><!--紫色 -->
+    <color name="grey">#808080</color><!-- 灰色 -->
+    <!-- 
+     *                     结束
+     ***********************************************-->
+    <!-- 
+     *   通用颜色表
+     -->
+       <color name="content_gray">#c2cccc</color><!-- 主文字色 -->
+       <color name="content_text">#787878</color><!-- 主文字色 -->
+       <color name="app_background">#f9f9f9</color><!-- 全局背景色 -->
+       <color name="black_shadow">#BF000000</color>
+       <color name="source_theme_name">#ffffff</color><!-- 资讯源/主题名称色 -->
+       <color name="deep_gray">#6a6a6a</color><!-- 提示文字色 -->
+       <color name="dialog_bg">#e9ecec</color><!-- 对话框背景色 -->
+       <color name="dialog_button_divider">#a6a8a8</color><!-- 对话框的按钮分隔线颜色 -->
+       <color name="list_divider_line_color">#cccccc</color><!-- 界面列表分隔线颜色 -->
+       <color name="purple_dark">#7B52AB</color><!-- 深紫色颜色 -->
+       <color name="purple_dark_new">#9878ff</color><!-- 深紫色颜色 -->
+       <color name="text_dark_color">#252525</color>
+       <color name="btn_prs_color">#d3c5e5</color>
+       <color name="list_item_prs_color">#e4e4e4</color><!-- 列表item的prs状态的颜色 -->
+       <color name="titlebar_disable_black">#2B2B2B</color>
+       <color name="head_border">#CCCCCC</color><!-- 头像外圈 -->
+       <color name="popupwindow_bg_color">#9A000000</color><!-- PopupWindow背景 -->
+       
+    <!-- ******************************************
+     *                     登录注册页
+     -->
+    <color name="reg_entrance_layout_bg">#CCFFFFFF</color>
+    
+    <color name="reg_entrance_bottom_bg">#667b52ab</color>
+    <color name="reg_entrance_bottom_fg">#b3ffffff</color>
+    <color name="input_divider">#CFCFCF</color>
+    <color name="reg_light_purple_color">#BD9FDF</color>
+    <color name="reg_verify_bg_gray">#c7c7c7</color>
+    <color name="reg_tip_dialog_bg_color">#e2e6e5</color>
+    <color name="reg_tip_dialog_btn_text_color">#b3b3b3</color>
+    
+    <!-- 推荐 -->
+    <color name="home_tab_bar_bg">#e67b52ab</color>
+    <color name="home_tab_title_prs">#2e006e</color>
+    <color name="home_shortcur_pannel_bg">#e6cccccc</color>
+    <color name="home_yuanfen_text_count_tip1">#9e9e9e</color>
+    <color name="home_yuanfen_text_count_tip2">#ff0000</color>
+    <color name="rec_item_detail_text">#7f7f7f</color>
+    <color name="rec_item_female_level_text">#d3b0ff</color>
+    <color name="rec_shortcut_black_shade">#73000000</color>
+    <color name="rec_no_picture_bg">#d5d5d5</color>
+    
+    <!-- 排行 -->
+    <color name="rank_list_even_item_bg">#f8f8f8</color>
+    
+    <!-- 会员资料模块 -->
+    <color name="info_listview_back">#F2F2F2</color>
+    
+    <color name="info_page_bottom">#e67b52ab</color>
+    <color name="info_level_txt_color">#bd9fdf</color>
+    <color name="info_audio_txt_color">#787878</color>
+    <color name="info_audio_progress_bg_color">#c7c7c7</color>
+    <color name="info_divider_line_color">#cccccc</color>
+    <color name="info_tag_back_color">#f8f8f8</color>
+    <color name="info_tag_txt_color">#252525</color>
+    <color name="info_more_data_txt_color">#bd9fdf</color>
+    <color name="info_send_gift_pager_back">#f7f7f7</color>
+    <color name="info_send_gift_pager_divider">#c4c4c4</color>
+    <color name="info_bottom_center_divider">#714d9e</color>
+    
+    <!-- 个人中心模块 -->
+    <color name="pri_header_back">#7b52ab</color>
+    <color name="pri_preview_txt_color">#bd9fdf</color>
+    <color name="pri_divider_line_color">#553285</color>
+    <color name="pri_page_back_color">#f1f1f1</color>
+    <color name="pri_level_title_back_color">#f6f6f6</color>
+    <color name="pri_info_divider_color">#bbbbbb</color>
+    <color name="pri_info_choice_title_color">#f9f9f9</color>
+    <color name="pri_info_list_active">#e4e4e4</color>
+    <color name="pri_photo_list_title_color">#929292</color>
+    <color name="pri_delete_dialog_divider_color">#a6a8a8</color>
+    <color name="pri_delete_dialog_back_color">#e9ecec</color>
+    <color name="pri_money_account_bg_color">#BD9FDF</color>
+    <color name="pri_money_account_cash_text_color">#8fc31f</color>
+    <color name="pri_level_go_prs_color">#cdb3cc</color>
+    <color name="pri_tab_color">#312e45</color>
+    <color name="pri_my_head_border">#66FFFFFF</color><!-- 个人中心头像外圈 -->
+    <color name="pri_sysportrait_content_bg_color">#f7f7f7</color>
+    <color name="pri_sysportrait_tip_bg_color">#66000000</color>
+    <color name="pri_photolist_locknum_bg_color">#7F000000</color>
+    <color name="vidio_voice_reupload_unpre">#ff4055</color>
+    <color name="vidio_voice_reupload_pre">#cb4453</color>
+    
+  <!--   聊天模块 -->
+  <color name="chat_chat_list_divider_color">#c6c6c6</color>
+  <color name="chat_board_divider_color">#c1c4c8</color>
+  <color name="chat_audio_record_bg_color">#d9dce0</color>
+  <color name="chat_audio_gesture_bg_color">#E73B4E</color>
+  <color name="chat_video_cover_bg">#66000000</color>
+  <color name="send_gift_thank_back">#E6000000</color>
+  <color name="chat_keyword_match_op_text">#00a07f</color>
+  <color name="chat_chat_list_tab_title_color">#4b1e89</color>
+  <color name="chat_chat_list_new_text_color">#9878ff</color>
+  <color name="chat_first_gift_dialog_btn_color">#9878ff</color>
+  <color name="chat_receivermode_tip_bg_color">#cc000000</color>
+  
+   <!--   设置模块 -->
+   <color name="set_push_sub_item_bg">#f1f1f1</color>
+    
+   <!--   个人中心下拉背景色 -->
+   <color name="my_pull_bg">#342a47</color>
+    
+    <!-- 
+      *                     结束
+    ***********************************************-->
+</resources>

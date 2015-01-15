@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+    
+    <RelativeLayout
+        android:id="@+id/talk_skill_bg"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="#66000000"
+        />
+    
+    <LinearLayout
+        android:id="@+id/talk_skill_container"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="-100dp"
+    	android:paddingTop="124dp"
+    	android:paddingBottom="@dimen/info_margin_36dp"
+    	android:paddingLeft="@dimen/info_margin_8dp"
+    	android:paddingRight="@dimen/info_margin_8dp"
+    	android:background="@color/white"
+    	android:orientation="vertical">
+    	
+        <TextView
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="@dimen/info_margin_8dp"
+    		android:layout_marginRight="@dimen/info_margin_8dp"
+    		android:text="@string/rec_chatskill_chat_desc"
+    		android:textColor="@color/content_text"
+    		android:textSize="17sp" />
+        
+        <LinearLayout
+            android:id="@+id/talk_skill_inner_container"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="@dimen/info_margin_20dp"
+	    	android:orientation="vertical" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

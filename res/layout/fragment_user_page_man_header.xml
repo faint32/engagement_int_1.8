@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/header_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView 
+                android:id="@+id/user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                />
+            <TextView
+                android:id="@+id/man_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:gravity="center"
+                android:background="@drawable/bg_top_bar_lv_man"
+                android:textColor="@color/info_level_txt_color"
+                android:textSize="@dimen/info_level_txt_size"
+                android:visibility="invisible" />
+
+            <com.netease.engagement.view.HeadView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp" />
+
+            <TextView
+                android:id="@+id/rich_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_12dp"
+                android:text="@string/rich_index_a"
+                android:textColor="@color/white"
+                android:textSize="@dimen/info_audio_txt_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_yx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/info_margin_24dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@drawable/button_addyixin_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/yixin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-4dp"
+            android:src="@drawable/icon_yixin_small" />
+
+        <TextView
+            android:id="@+id/yixin_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="@string/add_yixin_friend"
+            android:textColor="@color/info_tag_txt_color"
+            android:textSize="@dimen/info_txt_size_17" />
+    </LinearLayout>
+    
+    <TextView
+	    android:id="@+id/notify_yixin_tip"
+		android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:text="@string/notify_yixin_tip"
+       	android:textSize="12sp"
+      	android:textColor="#787878"
+      	android:layout_marginTop="5dip"
+      	android:layout_gravity="center_horizontal"
+      	android:gravity="center"
+      	android:visibility="gone"/>
+
+</LinearLayout>

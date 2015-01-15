@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <com.netease.engagement.widget.richtext.view.RichTextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/bg_mesg_white"
+        android:paddingLeft="@dimen/info_margin_16dp"
+        android:paddingStart="@dimen/info_margin_16dp"
+        android:paddingTop="@dimen/info_margin_12dp"
+        android:paddingBottom="@dimen/info_margin_12dp"
+        android:paddingRight="@dimen/info_margin_12dp"
+        android:paddingEnd="@dimen/info_margin_12dp"
+        android:textColor="@color/black" 
+        />
+    
+    <TextView
+        android:id="@+id/text_content_cover"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mesg_white"
+        android:gravity="center"
+        android:text="@string/click_to_look"
+        android:textColor="@color/chat_chat_list_new_text_color"
+        android:visibility="gone" />
+    
+</RelativeLayout>

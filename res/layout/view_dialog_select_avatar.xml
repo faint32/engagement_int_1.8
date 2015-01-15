@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/reg_tip_dialog_bg_color">
+    <TextView 
+        android:id="@+id/select_avatar_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:text="@string/rec_tip_select_avatar1"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/black"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+    />
+    <TextView 
+        android:id="@+id/select_avatar_tip_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/rec_tip_select_avatar2"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+    />
+    
+    <com.netease.engagement.view.ProfileView
+	    android:id="@+id/select_avatar"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="15dip"
+    	android:background="@drawable/icon_portrait_upload"
+	/>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_1"
+        android:layout_marginTop="20dip"
+        android:background="@color/dialog_button_divider"
+    />
+    <TextView 
+        android:id="@+id/select_avatar_ok"
+        android:text="@string/confirm"
+        android:enabled="false"
+        style="@style/dialog_btn_style"
+    />
+     <ImageView 
+        android:id="@+id/select_avatar_back_div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_1"
+        android:background="@color/dialog_button_divider"
+        android:visibility="gone"
+    />
+      <TextView 
+        android:id="@+id/select_avatar_back"
+        android:text="@string/back"
+        style="@style/dialog_btn_style"
+        android:visibility="gone" />
+</LinearLayout>

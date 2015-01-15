@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/info_margin_8dp"
+    android:paddingStart="@dimen/info_margin_8dp"
+    android:paddingRight="@dimen/info_margin_1dp"
+    android:paddingEnd="@dimen/info_margin_1dp"
+    android:paddingTop="@dimen/info_margin_8dp"
+    android:paddingBottom="@dimen/info_margin_8dp"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/chat_skill_item_btn"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:paddingLeft="@dimen/info_margin_6dp"
+    	android:paddingRight="@dimen/info_margin_6dp"
+    	android:textSize="15sp"
+    	android:gravity="center"
+    	android:background="@drawable/btn_pginfo_liaotianji_selector" />
+
+</LinearLayout>

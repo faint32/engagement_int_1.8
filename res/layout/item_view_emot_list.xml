@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="45dp"
+    android:layout_height="45dp" 
+    android:padding="@dimen/chat_emot_item_padding"
+    >
+    <ImageView
+        android:id="@+id/emot" 
+        android:layout_width="@dimen/info_margin_20dp"
+        android:layout_height="@dimen/info_margin_20dp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

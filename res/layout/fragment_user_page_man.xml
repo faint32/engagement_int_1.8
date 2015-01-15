@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <include 
+    	android:id="@+id/empty_tip"
+    	layout="@layout/view_common_empty" 
+    	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:layout_centerInParent="true"
+    	android:visibility="gone"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top_layout"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <include
+                android:id="@+id/user_page_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/fragment_user_page_man_header" />
+            <include
+                android:id="@+id/user_page_image_gift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/view_image_and_gift" />
+            <include
+                android:id="@+id/user_page_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/info_margin_24dp"
+                layout="@layout/view_detail_data" />
+            <View android:layout_width="match_parent"
+                    android:layout_height="@dimen/info_main_page_bottom_height"
+                    android:background="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+    
+    <com.netease.engagement.view.UserBottomLinearLayout
+        android:id="@+id/user_page_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_main_page_bottom_height"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/info_page_bottom"
+        android:gravity="center" >
+        <RelativeLayout 
+            android:layout_width="@dimen/userpage_bottom_layout_button_width"
+            android:layout_height="match_parent"
+            android:id="@+id/chat_layout"
+            >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/chat_icon"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/button_chat_selector"/>
+	        <TextView
+	            android:id="@+id/chat_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:paddingBottom="@dimen/info_margin_4dp"
+	            android:text="@string/chat"
+	            android:textSize="@dimen/info_main_page_bottom_txt_size"
+	            android:textColor="@color/txt_color_chat_selector"
+	            />
+        </RelativeLayout>
+    </com.netease.engagement.view.UserBottomLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="money_account_btn_text_size">15sp</dimen>
+	<dimen name="money_account_lisence_text">11sp</dimen>
+	<dimen name="info_complain_text_size">14sp</dimen>
+	
+	<dimen name="money_account_money_margin_top">1dip</dimen>
+    <dimen name="money_account_money_margin_bottom">1dip</dimen>
+    <dimen name="money_account_charm_margin_top">5dip</dimen>
+    <dimen name="money_account_charm_margin_bottom">5dip</dimen>
+    <dimen name="money_account_btn_margin_bottom">25dip</dimen>
+    
+    <dimen name="splash_margin_bottom1">18dip</dimen>
+    <dimen name="splash_margin_top1">14dip</dimen>
+    <dimen name="splash_margin_top2">6dip</dimen>
+</resources>

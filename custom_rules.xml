@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom-rules" default="help">
+    <property name="java.encoding" value="utf-8" />
+    <echo message="custom-rules"></echo>
+    <property name="source.dir" location="src ;" />
+    <property file="secure.properties" />
+    <property  name="apk.dir"  value="./release"/>
+    <import file="../crashlytics/crashlytics_build.xml"/>
+    <!-- Read manifest properties , e.g.
+         manifest(android:versionName) or manifest.package -->
+    <xmlproperty file="AndroidManifest.xml" />
+    <property name="version" value="${manifest(android:versionName)}" />
+ <!-- process channels -->   
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties" >
+        <classpath>
+            <pathelement location="libs/ant-contrib-1.0b3.jar" />
+        </classpath>
+    </taskdef>
+    <target name="channels" >
+        <mkdir dir="${apk.dir}" />
+         <replaceregexp
+            byline="false"
+            encoding="utf-8"
+            file="./src/com/netease/engagement/app/EgmConstants.java"
+            match="init_crashlytics(\s*)=(\s*)(.*);"
+            replace="init_crashlytics = true;" />
+        <foreach
+            delimiter=";"
+            list="${market_channels}"
+            param="channel"
+            target="modify_manifest" >
+        </foreach>
+    </target>
+
+    <target name="modify_manifest" >
+        <tstamp/>
+         <replaceregexp
+            byline="false"
+            encoding="utf-8"
+            file="./AndroidManifest.xml"
+            match="android:name=&quot;Channel&quot;(\s*) android:value=&quot;(.*)&quot;"
+            replace="android:name=&quot;Channel&quot; android:value=&quot;${channel}&quot;" />
+        <property
+            name="out.final.file"
+            location="${apk.dir}/${ant.project.name}_${channel}_v${version}_${DSTAMP}.apk" />
+        <antcall target="clean" />
+        <antcall target="release" />
+    </target>
+</project>

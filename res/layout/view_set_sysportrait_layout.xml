@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set_sysportrait_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/set_sysportrait_tip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_28dp"
+        android:background="@color/pri_sysportrait_tip_bg_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/info_margin_16dp"
+        android:paddingStart="@dimen/info_margin_16dp"
+        android:text="@string/pri_setportrait_tip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pggift_curtain" />
+
+    <com.netease.engagement.view.WrapContentViewPager
+        android:id="@+id/sysportrait_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pri_sysportrait_content_bg_color"
+        android:paddingTop="@dimen/info_margin_8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pri_sysportrait_content_bg_color"
+        android:paddingBottom="@dimen/info_margin_12dp"
+        android:paddingTop="@dimen/info_margin_12dp" >
+
+        <com.netease.engagement.view.PagerIndicator
+            android:id="@+id/sysportrait_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/set_portrait"
+            style = "@style/common_purple_h36_btn_style"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/info_margin_8dp"
+            android:text="@string/confirm"
+            android:width="@dimen/info_margin_72dp" />
+    
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.handmark.pulltorefresh.compat.LoadingListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@null"
+    android:cacheColorHint="@color/transparent"
+    android:fadingEdge="none"
+    android:scrollbars="none"
+    android:fastScrollEnabled="false"
+    android:footerDividersEnabled="false"
+    android:headerDividersEnabled="false"
+    android:smoothScrollbar="true" 
+    android:overScrollMode="never"
+    >
+</com.handmark.pulltorefresh.compat.LoadingListView>

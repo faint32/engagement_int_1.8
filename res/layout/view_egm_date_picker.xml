@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal"
+	    android:layout_marginLeft="12dip"
+	    android:layout_marginRight="12dip">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_up"
+	    />
+	    <net.simonvt.numberpicker.NumberPicker
+	        android:id="@+id/picker_year"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	
+	    />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_down"
+	    />
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal"
+	    android:layout_marginLeft="12dip"
+	    android:layout_marginRight="12dip">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_up"
+	    />
+	    <net.simonvt.numberpicker.NumberPicker
+	        android:id="@+id/picker_month"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	
+	    />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_down"
+	    />
+	</LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center_horizontal"
+	    android:layout_marginLeft="12dip"
+	    android:layout_marginRight="12dip">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_up"
+	    />
+	    <net.simonvt.numberpicker.NumberPicker
+	        android:id="@+id/picker_day"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	
+	    />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center"
+	    	android:src="@drawable/icon_pgregister_birthday_arrow_down"
+	    />
+	</LinearLayout>
+</LinearLayout>

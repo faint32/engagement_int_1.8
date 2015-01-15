@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_charm_cheats" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin_160dp"
+            android:layout_marginTop="@dimen/info_margin_32dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charm_tip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/info_more_data_txt_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_8dp"
+                android:text="@string/how_to_get_gift"
+                android:textColor="@color/white"
+                android:textSize="@dimen/info_more_data_txt_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/info_margin_20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_pri_pic"
+                android:textSize="@dimen/info_txt_size_17"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_4dp"
+                android:text="@string/upload_pri_pic"
+                android:textSize="@dimen/info_more_data_txt_size"
+                android:textColor="@color/info_audio_txt_color"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/upload_pri_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_pri_center_cheat_selector"
+            android:layout_marginRight="@dimen/info_margin_28dp"
+            android:text="@string/upload_pri_pic_a"
+            android:textSize="@dimen/info_txt_size_17"
+            android:textColor="@color/pri_preview_txt_color"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_80dp"
+        android:background="@color/pri_level_title_back_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/info_margin_20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/peng_yuanfen"
+                android:textSize="@dimen/info_txt_size_17"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_4dp"
+                android:text="@string/let_dashan"
+                android:textSize="@dimen/info_more_data_txt_size"
+                android:textColor="@color/info_audio_txt_color"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/open_yuanfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_pri_center_cheat_selector"
+            android:layout_marginRight="@dimen/info_margin_28dp"
+            android:text="@string/open_peng_yuanfen"
+            android:textSize="@dimen/info_txt_size_17"
+            android:textColor="@color/pri_preview_txt_color"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/info_margin_20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/record_audio_int"
+                android:textSize="@dimen/info_txt_size_17"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_4dp"
+                android:text="@string/let_shenhuan"
+                android:textSize="@dimen/info_more_data_txt_size"
+                android:textColor="@color/info_audio_txt_color"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/record_intr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_pri_center_cheat_selector"
+            android:layout_marginRight="@dimen/info_margin_28dp"
+            android:text="@string/record_audio_int_a"
+            android:textSize="@dimen/info_txt_size_17"
+            android:textColor="@color/pri_preview_txt_color"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_margin_80dp"
+        android:background="@color/pri_level_title_back_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/info_margin_20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_sajiao"
+                android:textSize="@dimen/info_txt_size_17"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_margin_4dp"
+                android:text="@string/let_dai_huangguan"
+                android:textSize="@dimen/info_more_data_txt_size"
+                android:textColor="@color/info_audio_txt_color"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/find_to_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_pri_center_cheat_selector"
+            android:layout_marginRight="@dimen/info_margin_28dp"
+            android:text="@string/find_to_chat"
+            android:textSize="@dimen/info_txt_size_17"
+            android:textColor="@color/pri_preview_txt_color"
+            />
+    </LinearLayout>
+
+</LinearLayout>
